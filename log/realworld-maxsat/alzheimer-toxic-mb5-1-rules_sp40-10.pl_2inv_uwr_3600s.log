@@ -1,0 +1,89 @@
+number of rules: 40
+program size: 198
+(r1) less_toxic(A,B) :- ring_subst_2(B,E), polar(E,C), ring_subst_2(A,D), polarisable(E,F).
+(r2) less_toxic(A,B) :- r_subst_3(B,D), alk_groups(A,E), r_subst_3(B,C), r_subst_3(B,F).
+(r3) less_toxic(A,B) :- ring_subst_5(A,C), ring_subst_6(A,D), ring_subst_3(B,C), ring_subst_2(B,D).
+(r4) less_toxic(A,B) :- r_subst_3(B,D), r_subst_3(A,C), ring_subst_2(A,E), r_subst_3(A,F).
+(r5) less_toxic(A,B) :- alk_groups(B,D), r_subst_1(A,E), ring_subst_3(B,F), alk_groups(B,C).
+(r6) less_toxic(A,B) :- alk_groups(B,D), alk_groups(A,D), ring_subst_4(B,C), r_subst_1(B,E).
+(r7) less_toxic(A,B) :- ring_subst_2(B,D), x_subst(A,C,D), n_val(B,F), r_subst_2(B,E).
+(r8) less_toxic(A,B) :- ring_subst_2(B,F), ring_subst_6(A,D), flex(D,C), x_subst(A,E,D).
+(r9) less_toxic(A,B) :- ring_subst_3(B,E), pi_doner(E,D), ring_subst_3(A,F), sigma(F,C).
+(r10) less_toxic(A,B) :- r_subst_3(B,C), r_subst_1(B,D), alk_groups(B,C), alk_groups(A,C).
+(r11) less_toxic(A,B) :- ring_subst_5(B,F), pi_doner(F,E), size(C,D), ring_subst_3(A,C).
+(r12) less_toxic(A,B) :- ring_substitutions(B,F), x_subst(B,E,C), r_subst_3(A,D).
+(r13) less_toxic(A,B) :- r_subst_2(A,F), ring_subst_2(B,E), flex(E,C), flex(E,D).
+(r14) less_toxic(A,B) :- ring_subst_2(A,C), ring_subst_6(A,D), sigma(D,E), ring_subst_6(B,C).
+(r15) less_toxic(A,B) :- ring_subst_2(A,C), ring_subst_3(B,C), x_subst(B,D,C), ring_subst_4(A,E).
+(r16) less_toxic(A,B) :- ring_subst_2(B,F), ring_subst_3(A,E), pi_acceptor(E,D), h_acceptor(E,C).
+(r17) less_toxic(A,B) :- x_subst(A,F,E), ring_subst_3(A,E), polarisable(E,D), alk_groups(B,C).
+(r18) less_toxic(A,B) :- x_subst(A,C,F), ring_subst_4(B,F), n_val(A,C), x_subst(A,E,D).
+(r19) less_toxic(A,B) :- ring_substitutions(B,F), x_subst(A,E,C), ring_subst_4(A,D), n_val(A,E).
+(r20) less_toxic(A,B) :- ring_subst_4(B,D), alk_groups(A,E), n_val(A,C), alk_groups(A,F).
+(r21) less_toxic(A,B) :- ring_subst_5(B,F), x_subst(A,C,D), r_subst_3(A,C), ring_subst_2(A,E).
+(r22) less_toxic(A,B) :- r_subst_3(B,D), x_subst(A,D,E), ring_subst_5(A,F), sigma(F,C).
+(r23) less_toxic(A,B) :- alk_groups(B,D), x_subst(A,D,E), ring_subst_2(B,C), n_val(A,D).
+(r24) less_toxic(A,B) :- n_val(B,D), ring_subst_3(A,E), ring_subst_2(A,E), x_subst(A,D,C).
+(r25) less_toxic(A,B) :- n_val(B,E), x_subst(B,E,D), alk_groups(A,C), r_subst_3(B,F).
+(r26) less_toxic(A,B) :- ring_subst_3(A,E), r_subst_1(A,C), ring_subst_4(B,D), ring_subst_6(B,D).
+(r27) less_toxic(A,B) :- ring_subst_6(B,F), ring_subst_6(A,F), x_subst(A,E,C), ring_subst_6(B,D).
+(r28) less_toxic(A,B) :- r_subst_1(B,C), x_subst(B,E,D), x_subst(A,E,D), sigma(D,F).
+(r29) less_toxic(A,B) :- n_val(A,D), alk_groups(B,E), ring_subst_3(A,F), ring_subst_6(B,C).
+(r30) less_toxic(A,B) :- ring_subst_4(A,C), size(D,E), alk_groups(B,F), ring_subst_3(A,D).
+(r31) less_toxic(A,B) :- r_subst_1(B,F), sigma(C,E), x_subst(A,D,C).
+(r32) less_toxic(A,B) :- ring_subst_2(B,F), ring_subst_3(B,C), pi_acceptor(C,E), x_subst(A,D,C).
+(r33) less_toxic(A,B) :- r_subst_3(B,D), x_subst(A,D,E), n_val(B,D), polar(E,C).
+(r34) less_toxic(A,B) :- ring_subst_6(A,D), r_subst_3(A,E), ring_subst_3(A,F), ring_subst_5(B,C).
+(r35) less_toxic(A,B) :- x_subst(A,E,C), n_val(A,F), pi_acceptor(C,D), ring_subst_4(B,C).
+(r36) less_toxic(A,B) :- ring_substitutions(B,F), polar(E,C), ring_subst_4(A,E), ring_substitutions(B,D).
+(r37) less_toxic(A,B) :- alk_groups(B,D), ring_subst_3(A,E), sigma(E,C), alk_groups(A,F).
+(r38) less_toxic(A,B) :- h_acceptor(D,C), h_acceptor(D,E), ring_subst_4(A,D), alk_groups(B,F).
+(r39) less_toxic(A,B) :- ring_subst_6(B,F), ring_subst_2(B,E), r_subst_1(A,D), ring_substitutions(A,C).
+(r40) less_toxic(A,B) :- gt(C,E), n_val(A,D), r_subst_3(B,C), ring_substitutions(A,C).
+====================
+MaxSAT solving... (1412 vars, 8860 hard, 464 soft)
+number of rules: 42
+program size: 190
+(inv1) inv1(X1,X2,X3,X4,X5,X6) :- alk_groups(X1,X2), alk_groups(X3,X4), ring_subst_3(X5,X6).
+(inv2) inv2(X1,X2,X3,X4,X5) :- x_subst(X1,X2,X3), n_val(X4,X5).
+(r1) less_toxic(A,B) :- ring_subst_2(B,E), polar(E,C), ring_subst_2(A,D), polarisable(E,F).
+(r2) less_toxic(A,B) :- r_subst_3(B,D), alk_groups(A,E), r_subst_3(B,C), r_subst_3(B,F).
+(r3) less_toxic(A,B) :- ring_subst_5(A,C), ring_subst_6(A,D), ring_subst_3(B,C), ring_subst_2(B,D).
+(r4) less_toxic(A,B) :- r_subst_3(B,D), r_subst_3(A,C), ring_subst_2(A,E), r_subst_3(A,F).
+(r5) less_toxic(A,B) :- inv1(B,D,B,C,B,F), r_subst_1(A,E).
+(r6) less_toxic(A,B) :- alk_groups(B,D), alk_groups(A,D), ring_subst_4(B,C), r_subst_1(B,E).
+(r7) less_toxic(A,B) :- inv2(A,C,D,B,F), ring_subst_2(B,D), r_subst_2(B,E).
+(r8) less_toxic(A,B) :- ring_subst_2(B,F), ring_subst_6(A,D), flex(D,C), x_subst(A,E,D).
+(r9) less_toxic(A,B) :- ring_subst_3(B,E), pi_doner(E,D), ring_subst_3(A,F), sigma(F,C).
+(r10) less_toxic(A,B) :- r_subst_3(B,C), r_subst_1(B,D), alk_groups(B,C), alk_groups(A,C).
+(r11) less_toxic(A,B) :- ring_subst_5(B,F), pi_doner(F,E), size(C,D), ring_subst_3(A,C).
+(r12) less_toxic(A,B) :- ring_substitutions(B,F), x_subst(B,E,C), r_subst_3(A,D).
+(r13) less_toxic(A,B) :- r_subst_2(A,F), ring_subst_2(B,E), flex(E,C), flex(E,D).
+(r14) less_toxic(A,B) :- ring_subst_2(A,C), ring_subst_6(A,D), sigma(D,E), ring_subst_6(B,C).
+(r15) less_toxic(A,B) :- ring_subst_2(A,C), ring_subst_3(B,C), x_subst(B,D,C), ring_subst_4(A,E).
+(r16) less_toxic(A,B) :- ring_subst_2(B,F), ring_subst_3(A,E), pi_acceptor(E,D), h_acceptor(E,C).
+(r17) less_toxic(A,B) :- inv1(B,C,B,C,A,E), x_subst(A,F,E), polarisable(E,D).
+(r18) less_toxic(A,B) :- inv2(A,C,F,A,C), ring_subst_4(B,F), x_subst(A,E,D).
+(r19) less_toxic(A,B) :- inv2(A,E,C,A,E), ring_substitutions(B,F), ring_subst_4(A,D).
+(r20) less_toxic(A,B) :- ring_subst_4(B,D), alk_groups(A,E), n_val(A,C), alk_groups(A,F).
+(r21) less_toxic(A,B) :- ring_subst_5(B,F), x_subst(A,C,D), r_subst_3(A,C), ring_subst_2(A,E).
+(r22) less_toxic(A,B) :- r_subst_3(B,D), x_subst(A,D,E), ring_subst_5(A,F), sigma(F,C).
+(r23) less_toxic(A,B) :- inv2(A,D,E,A,D), alk_groups(B,D), ring_subst_2(B,C).
+(r24) less_toxic(A,B) :- inv2(A,D,C,B,D), ring_subst_3(A,E), ring_subst_2(A,E).
+(r25) less_toxic(A,B) :- inv2(B,E,D,B,E), alk_groups(A,C), r_subst_3(B,F).
+(r26) less_toxic(A,B) :- ring_subst_3(A,E), r_subst_1(A,C), ring_subst_4(B,D), ring_subst_6(B,D).
+(r27) less_toxic(A,B) :- ring_subst_6(B,F), ring_subst_6(A,F), x_subst(A,E,C), ring_subst_6(B,D).
+(r28) less_toxic(A,B) :- r_subst_1(B,C), x_subst(B,E,D), x_subst(A,E,D), sigma(D,F).
+(r29) less_toxic(A,B) :- inv1(B,E,B,E,A,F), n_val(A,D), ring_subst_6(B,C).
+(r30) less_toxic(A,B) :- inv1(B,F,B,F,A,D), ring_subst_4(A,C), size(D,E).
+(r31) less_toxic(A,B) :- r_subst_1(B,F), sigma(C,E), x_subst(A,D,C).
+(r32) less_toxic(A,B) :- ring_subst_2(B,F), ring_subst_3(B,C), pi_acceptor(C,E), x_subst(A,D,C).
+(r33) less_toxic(A,B) :- inv2(A,D,E,B,D), r_subst_3(B,D), polar(E,C).
+(r34) less_toxic(A,B) :- ring_subst_6(A,D), r_subst_3(A,E), ring_subst_3(A,F), ring_subst_5(B,C).
+(r35) less_toxic(A,B) :- inv2(A,E,C,A,F), pi_acceptor(C,D), ring_subst_4(B,C).
+(r36) less_toxic(A,B) :- ring_substitutions(B,F), polar(E,C), ring_subst_4(A,E), ring_substitutions(B,D).
+(r37) less_toxic(A,B) :- inv1(B,D,A,F,A,E), sigma(E,C).
+(r38) less_toxic(A,B) :- h_acceptor(D,C), h_acceptor(D,E), ring_subst_4(A,D), alk_groups(B,F).
+(r39) less_toxic(A,B) :- ring_subst_6(B,F), ring_subst_2(B,E), r_subst_1(A,D), ring_substitutions(A,C).
+(r40) less_toxic(A,B) :- gt(C,E), n_val(A,D), r_subst_3(B,C), ring_substitutions(A,C).
+====================

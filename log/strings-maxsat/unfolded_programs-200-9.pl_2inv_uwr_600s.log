@@ -1,0 +1,261 @@
+number of rules: 126
+program size: 853
+(r1) p4(A,B) :- copy1(A,C), copy1(C,B).
+(r2) p6(A,B) :- not_empty(A), copy1(A,B).
+(r3) p11(A,B) :- skip1(A,C), mk_uppercase(C,B).
+(r4) p14(A,B) :- not_empty(A), mk_lowercase(A,B).
+(r5) p15(A,B) :- not_empty(A), skip1(A,B).
+(r6) p32(A,B) :- skip1(A,C), mk_lowercase(C,B).
+(r7) p50(A,B) :- mk_lowercase(A,C), mk_uppercase(C,B).
+(r8) p59(A,B) :- skip1(A,C), copy1(C,B).
+(r9) p72(A,B) :- copy1(A,C), mk_lowercase(C,B).
+(r10) p78(A,B) :- not_empty(A), mk_uppercase(A,B).
+(r11) p95(A,B) :- mk_lowercase(A,C), copy1(C,B).
+(r12) p48(A,B) :- copy1(A,C), p48_1(C,B).
+(r13) p131(A,B) :- copy1(A,C), p131_1(C,B).
+(r14) p1(A,B) :- mk_lowercase(A,C0_0), copy1(C0_0,C), mk_uppercase(C,C1_0), skip1(C1_0,C3_0), copy1(C3_0,B).
+(r15) p19(A,B) :- mk_lowercase(A,C), skip1(C,C1_0-1), mk_lowercase(C1_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r16) p40(A,B) :- copy1(A,C), copy1(C,C1_0-1), copy1(C1_0-1,C1_0), skip1(C1_0,C2_0), mk_uppercase(C2_0,B).
+(r17) p71(A,B) :- mk_lowercase(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r18) p80(A,B) :- mk_lowercase(A,C), copy1(C,C1_0-1), copy1(C1_0-1,C1_0), skip1(C1_0,C2_0), copy1(C2_0,B).
+(r19) p85(A,B) :- skip1(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C1_0), mk_lowercase(C1_0,C2_0), copy1(C2_0,B).
+(r20) p92(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C1_0), skip1(C1_0,C3_0), copy1(C3_0,B).
+(r21) p96(A,B) :- skip1(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r22) p98(A,B) :- copy1(A,C), skip1(C,C1_0-1), mk_uppercase(C1_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r23) p106(A,B) :- skip1(A,C0_0), copy1(C0_0,C), copy1(C,C2_0), copy1(C2_0,C1_0), mk_uppercase(C1_0,B).
+(r24) p108(A,B) :- copy1(A,C), copy1(C,C1_0-1), copy1(C1_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r25) p111(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C2_0), copy1(C2_0,C1_0), mk_uppercase(C1_0,B).
+(r26) p135(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C1_0), copy1(C1_0,C3_0), copy1(C3_0,B).
+(r27) p145(A,B) :- copy1(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C1_0), skip1(C1_0,C2_0), copy1(C2_0,B).
+(r28) p155(A,B) :- copy1(A,C), copy1(C,C1_0-1), copy1(C1_0-1,C1_0), mk_lowercase(C1_0,C2_0), copy1(C2_0,B).
+(r29) p3(A,B) :- skip1(A,C), skip1(C,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C3_0), copy1(C3_0,B).
+(r30) p47(A,B) :- mk_uppercase(A,C), mk_uppercase(C,C1_0), skip1(C1_0,C2_0-1), copy1(C2_0-1,C2_0), mk_uppercase(C2_0,B).
+(r31) p49(A,B) :- skip1(A,C0_0-1), copy1(C0_0-1,C0_0), mk_uppercase(C0_0,C), mk_uppercase(C,C1_0), mk_lowercase(C1_0,B).
+(r32) p75(A,B) :- copy1(A,C0_0), mk_lowercase(C0_0,C1_0-1), copy1(C1_0-1,C), mk_uppercase(C,C1_0), mk_lowercase(C1_0,B).
+(r33) p103(A,B) :- skip1(A,C), skip1(C,C1_0), skip1(C1_0,C2_0-1), copy1(C2_0-1,C2_0), mk_uppercase(C2_0,B).
+(r34) p161(A,B) :- copy1(A,C), skip1(C,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C3_0), mk_uppercase(C3_0,B).
+(r35) p165(A,B) :- mk_lowercase(A,C), skip1(C,C1_0), skip1(C1_0,C2_0-1), mk_uppercase(C2_0-1,C2_0), copy1(C2_0,B).
+(r36) p172(A,B) :- mk_uppercase(A,C), copy1(C,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C3_0), copy1(C3_0,B).
+(r37) p200(A,B) :- skip1(A,C), skip1(C,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C3_0), mk_uppercase(C3_0,B).
+(r38) p140(A,B) :- skip1(A,C), skip1(C,C1_0-1), skip1(C1_0-1,C2_0), mk_lowercase(C2_0,C1_0), copy1(C1_0,B).
+(r39) p5(A,B) :- copy1(A,C), skip1(C,C1_0), copy1(C1_0,B).
+(r40) p8(A,B) :- copy1(A,C), mk_lowercase(C,C1_0), copy1(C1_0,B).
+(r41) p16(A,B) :- skip1(A,C0_0), copy1(C0_0,C), mk_uppercase(C,B).
+(r42) p21(A,B) :- mk_lowercase(A,C), copy1(C,C1_0), copy1(C1_0,B).
+(r43) p34(A,B) :- skip1(A,C), skip1(C,C1_0), copy1(C1_0,B).
+(r44) p35(A,B) :- copy1(A,C), copy1(C,C1_0), copy1(C1_0,B).
+(r45) p67(A,B) :- skip1(A,C), copy1(C,C1_0), copy1(C1_0,B).
+(r46) p74(A,B) :- skip1(A,C), skip1(C,C1_0), mk_uppercase(C1_0,B).
+(r47) p166(A,B) :- skip1(A,C0_0), mk_uppercase(C0_0,C), copy1(C,B).
+(r48) p167(A,B) :- skip1(A,C), copy1(C,C1_0), mk_lowercase(C1_0,B).
+(r49) p179(A,B) :- mk_lowercase(A,C0_0), mk_uppercase(C0_0,C), copy1(C,B).
+(r50) p7(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C1_0), mk_uppercase(C1_0,B).
+(r51) p102(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C1_0), copy1(C1_0,B).
+(r52) p119(A,B) :- mk_lowercase(A,C0_0), copy1(C0_0,C), copy1(C,C1_0), copy1(C1_0,B).
+(r53) p127(A,B) :- skip1(A,C0_0), copy1(C0_0,C), mk_lowercase(C,C1_0), copy1(C1_0,B).
+(r54) p129(A,B) :- mk_uppercase(A,C), mk_uppercase(C,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r55) p160(A,B) :- skip1(A,C), skip1(C,C1_0-1), mk_uppercase(C1_0-1,C1_0), mk_uppercase(C1_0,B).
+(r56) p163(A,B) :- copy1(A,C), skip1(C,C1_0), skip1(C1_0,C2_0), copy1(C2_0,B).
+(r57) p176(A,B) :- skip1(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C1_0), mk_uppercase(C1_0,B).
+(r58) p184(A,B) :- mk_uppercase(A,C), copy1(C,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r59) p189(A,B) :- mk_lowercase(A,C0_0), mk_uppercase(C0_0,C), skip1(C,C1_0), copy1(C1_0,B).
+(r60) p65(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C2_0), mk_uppercase(C2_0,C1_0), mk_lowercase(C1_0,C3_0), mk_uppercase(C3_0,B).
+(r61) p90(A,B) :- copy1(A,C0_0), copy1(C0_0,C), copy1(C,C2_0), copy1(C2_0,C1_0), copy1(C1_0,C3_0), mk_lowercase(C3_0,B).
+(r62) p112(A,B) :- skip1(A,C0_0), copy1(C0_0,C), copy1(C,C2_0), mk_lowercase(C2_0,C1_0), skip1(C1_0,C3_0), copy1(C3_0,B).
+(r63) p125(A,B) :- mk_lowercase(A,C0_0), mk_uppercase(C0_0,C), skip1(C,C2_0), copy1(C2_0,C1_0), skip1(C1_0,C3_0), copy1(C3_0,B).
+(r64) p13(A,B) :- copy1(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C1_0), copy1(C1_0,C3_0), copy1(C3_0,C2_0), mk_uppercase(C2_0,B).
+(r65) p20(A,B) :- skip1(A,C0_0-1), mk_uppercase(C0_0-1,C0_0), copy1(C0_0,C), copy1(C,C2_0), copy1(C2_0,C1_0), mk_uppercase(C1_0,B).
+(r66) p88(A,B) :- mk_uppercase(A,C), copy1(C,C1_0), skip1(C1_0,C2_0-1), mk_uppercase(C2_0-1,C2_0), copy1(C2_0,C3_0), copy1(C3_0,B).
+(r67) p91(A,B) :- skip1(A,C), copy1(C,C1_0-2), copy1(C1_0-2,C1_0-1), copy1(C1_0-1,C2_0), mk_lowercase(C2_0,C1_0), mk_lowercase(C1_0,B).
+(r68) p109(A,B) :- copy1(A,C0_0), copy1(C0_0,C), mk_uppercase(C,C1_0), copy1(C1_0,C3_0), copy1(C3_0,C4_0), copy1(C4_0,B).
+(r69) p122(A,B) :- skip1(A,C0_0), copy1(C0_0,C1_0-1), copy1(C1_0-1,C), skip1(C,C1_0), copy1(C1_0,C3_0), mk_lowercase(C3_0,B).
+(r70) p154(A,B) :- mk_uppercase(A,C), skip1(C,C1_0-1), skip1(C1_0-1,C2_0-1), copy1(C2_0-1,C1_0), skip1(C1_0,C2_0), mk_uppercase(C2_0,B).
+(r71) p181(A,B) :- mk_uppercase(A,C0_0), copy1(C0_0,C1_0-1), copy1(C1_0-1,C), mk_lowercase(C,C1_0), skip1(C1_0,C3_0), mk_lowercase(C3_0,B).
+(r72) p89(A,B) :- copy1(A,C), skip1(C,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C3_0), copy1(C3_0,C4_0), mk_lowercase(C4_0,B).
+(r73) p9(A,B) :- skip1(A,C), skip1(C,C1_0-1), skip1(C1_0-1,C2_0-1), mk_uppercase(C2_0-1,C1_0), copy1(C1_0,C3_0), skip1(C3_0,C5_0), skip1(C5_0,C6_0), copy1(C6_0,C2_0), copy1(C2_0,B).
+(r74) p55(A,B) :- copy1(A,C0_0), skip1(C0_0,C1_0-1), copy1(C1_0-1,C), copy1(C,C2_0), skip1(C2_0,C4_0), copy1(C4_0,C1_0), skip1(C1_0,C3_0), skip1(C3_0,C6_0), copy1(C6_0,B).
+(r75) p114(A,B) :- skip1(A,C), copy1(C,C1_0-2), mk_lowercase(C1_0-2,C1_0-1), skip1(C1_0-1,C2_0-1), copy1(C2_0-1,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C2_0), copy1(C2_0,C4_0), copy1(C4_0,B).
+(r76) p130(A,B) :- copy1(A,C0_0), copy1(C0_0,C), mk_lowercase(C,C2_0), skip1(C2_0,C3_0-2), mk_lowercase(C3_0-2,C3_0-1), copy1(C3_0-1,C4_0), copy1(C4_0,C1_0), skip1(C1_0,C3_0), mk_uppercase(C3_0,B).
+(r77) p149(A,B) :- copy1(A,C0_0), copy1(C0_0,C1_0-1), copy1(C1_0-1,C), skip1(C,C2_0), skip1(C2_0,C4_0), mk_uppercase(C4_0,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C6_0), copy1(C6_0,B).
+(r78) p170(A,B) :- copy1(A,C0_0), skip1(C0_0,C1_0-2), copy1(C1_0-2,C1_0-1), skip1(C1_0-1,C2_0), copy1(C2_0,C), skip1(C,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C5_0), mk_lowercase(C5_0,B).
+(r79) p199(A,B) :- mk_uppercase(A,C), copy1(C,C1_0), skip1(C1_0,C2_0-1), copy1(C2_0-1,C3_0-1), mk_lowercase(C3_0-1,C2_0), copy1(C2_0,C4_0), mk_lowercase(C4_0,C3_0), skip1(C3_0,C5_0), copy1(C5_0,B).
+(r80) p10(A,B) :- skip1(A,C0_0), skip1(C0_0,C1_0-1), skip1(C1_0-1,C2_0-1), copy1(C2_0-1,C), copy1(C,C2_0), skip1(C2_0,C4_0), copy1(C4_0,C1_0), skip1(C1_0,C3_0), mk_uppercase(C3_0,B).
+(r81) p22(A,B) :- skip1(A,C0_0), skip1(C0_0,C1_0-1), copy1(C1_0-1,C), skip1(C,C3_0-1), mk_lowercase(C3_0-1,C2_0), copy1(C2_0,C4_0), copy1(C4_0,C1_0), mk_uppercase(C1_0,C3_0), mk_lowercase(C3_0,B).
+(r82) p84(A,B) :- mk_uppercase(A,C), skip1(C,C1_0-1), skip1(C1_0-1,C2_0-1), skip1(C2_0-1,C3_0), skip1(C3_0,C4_0-1), copy1(C4_0-1,C1_0), mk_uppercase(C1_0,C2_0), copy1(C2_0,C4_0), copy1(C4_0,B).
+(r83) p142(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C1_0), skip1(C1_0,C3_0-1), skip1(C3_0-1,C4_0-1), copy1(C4_0-1,C5_0), copy1(C5_0,C3_0), skip1(C3_0,C4_0), mk_lowercase(C4_0,B).
+(r84) p186(A,B) :- skip1(A,C0_0), copy1(C0_0,C), skip1(C,C2_0), skip1(C2_0,C3_0-1), skip1(C3_0-1,C4_0), skip1(C4_0,C5_0), mk_uppercase(C5_0,C1_0), copy1(C1_0,C3_0), mk_lowercase(C3_0,B).
+(r85) p23(A,B) :- skip1(A,C), skip1(C,C1_0), mk_lowercase(C1_0,C2_0), copy1(C2_0,C3_0-1), copy1(C3_0-1,C3_0), skip1(C3_0,C4_0), copy1(C4_0,B).
+(r86) p24(A,B) :- skip1(A,C0_0), mk_lowercase(C0_0,C), copy1(C,C2_0), skip1(C2_0,C3_0-1), copy1(C3_0-1,C1_0), skip1(C1_0,C3_0), mk_uppercase(C3_0,B).
+(r87) p26(A,B) :- skip1(A,C0_0), copy1(C0_0,C1_0-1), copy1(C1_0-1,C), copy1(C,C3_0), copy1(C3_0,C2_0), mk_uppercase(C2_0,C1_0), copy1(C1_0,B).
+(r88) p56(A,B) :- skip1(A,C0_0), copy1(C0_0,C), copy1(C,C2_0), copy1(C2_0,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C5_0), copy1(C5_0,B).
+(r89) p58(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C1_0), skip1(C1_0,C3_0-1), mk_lowercase(C3_0-1,C3_0), copy1(C3_0,C4_0), copy1(C4_0,B).
+(r90) p61(A,B) :- skip1(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C2_0-1), copy1(C2_0-1,C1_0), copy1(C1_0,C3_0), copy1(C3_0,C2_0), mk_uppercase(C2_0,B).
+(r91) p86(A,B) :- mk_uppercase(A,C0_0), skip1(C0_0,C1_0-1), copy1(C1_0-1,C), skip1(C,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C5_0), copy1(C5_0,B).
+(r92) p87(A,B) :- skip1(A,C0_0-1), mk_lowercase(C0_0-1,C0_0), copy1(C0_0,C1_0-1), copy1(C1_0-1,C), mk_uppercase(C,C1_0), skip1(C1_0,C3_0), copy1(C3_0,B).
+(r93) p104(A,B) :- skip1(A,C0_0), copy1(C0_0,C1_0-1), copy1(C1_0-1,C), skip1(C,C1_0), skip1(C1_0,C3_0), skip1(C3_0,C5_0), copy1(C5_0,B).
+(r94) p107(A,B) :- copy1(A,C0_0), mk_lowercase(C0_0,C), skip1(C,C2_0), mk_lowercase(C2_0,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C5_0), mk_lowercase(C5_0,B).
+(r95) p139(A,B) :- copy1(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C2_0-1), mk_lowercase(C2_0-1,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C4_0), mk_uppercase(C4_0,B).
+(r96) p150(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C1_0), skip1(C1_0,C3_0-1), copy1(C3_0-1,C3_0), copy1(C3_0,C4_0), copy1(C4_0,B).
+(r97) p174(A,B) :- skip1(A,C0_0-1), copy1(C0_0-1,C0_0), skip1(C0_0,C1_0-1), copy1(C1_0-1,C), skip1(C,C1_0), skip1(C1_0,C3_0), mk_lowercase(C3_0,B).
+(r98) p190(A,B) :- copy1(A,C0_0-1), copy1(C0_0-1,C0_0), mk_lowercase(C0_0,C1_0-1), copy1(C1_0-1,C), mk_lowercase(C,C1_0), mk_lowercase(C1_0,C3_0), copy1(C3_0,B).
+(r99) p29(A,B) :- skip1(A,C), copy1(C,C1_0-1), skip1(C1_0-1,C2_0-2), copy1(C2_0-2,C2_0-1), skip1(C2_0-1,C3_0-1), copy1(C3_0-1,C1_0), skip1(C1_0,C3_0), mk_lowercase(C3_0,C2_0), copy1(C2_0,C4_0), copy1(C4_0,B).
+(r100) p30(A,B) :- copy1(A,C0_0), copy1(C0_0,C), skip1(C,C1_0), skip1(C1_0,C3_0-1), skip1(C3_0-1,C4_0-1), copy1(C4_0-1,C3_0), copy1(C3_0,C5_0), copy1(C5_0,C4_0), mk_lowercase(C4_0,C6_0), copy1(C6_0,B).
+(r101) p38(A,B) :- copy1(A,C0_0), skip1(C0_0,C1_0-1), skip1(C1_0-1,C2_0-1), copy1(C2_0-1,C), skip1(C,C3_0-1), copy1(C3_0-1,C2_0), mk_uppercase(C2_0,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C6_0), copy1(C6_0,B).
+(r102) p120(A,B) :- copy1(A,C0_0), mk_lowercase(C0_0,C), copy1(C,C2_0-1), mk_lowercase(C2_0-1,C2_0), skip1(C2_0,C3_0-1), copy1(C3_0-1,C1_0), copy1(C1_0,C4_0), copy1(C4_0,C3_0), copy1(C3_0,C5_0), copy1(C5_0,B).
+(r103) p123(A,B) :- mk_lowercase(A,C0_0), copy1(C0_0,C), copy1(C,C2_0), mk_lowercase(C2_0,C1_0), skip1(C1_0,C4_0-1), mk_uppercase(C4_0-1,C4_0), mk_uppercase(C4_0,C3_0), skip1(C3_0,C5_0), copy1(C5_0,C7_0), mk_lowercase(C7_0,B).
+(r104) p31(A,B) :- copy1(A,C0_0), skip1(C0_0,C1_0-2), copy1(C1_0-2,C1_0-1), skip1(C1_0-1,C2_0), copy1(C2_0,C), skip1(C,C1_0), skip1(C1_0,C3_0), skip1(C3_0,C5_0), copy1(C5_0,C8_0), copy1(C8_0,B).
+(r105) p41(A,B) :- skip1(A,C), copy1(C,C1_0-1), skip1(C1_0-1,C2_0-1), skip1(C2_0-1,C3_0), copy1(C3_0,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C4_0), skip1(C4_0,C6_0), skip1(C6_0,C8_0), mk_uppercase(C8_0,B).
+(r106) p54(A,B) :- copy1(A,C0_0), copy1(C0_0,C), mk_lowercase(C,C2_0), copy1(C2_0,C3_0-1), copy1(C3_0-1,C1_0), mk_uppercase(C1_0,C4_0), copy1(C4_0,C6_0), copy1(C6_0,C3_0), mk_uppercase(C3_0,C5_0), mk_lowercase(C5_0,B).
+(r107) p171(A,B) :- skip1(A,C0_0), copy1(C0_0,C), copy1(C,C2_0-1), skip1(C2_0-1,C3_0-2), copy1(C3_0-2,C2_0), skip1(C2_0,C3_0-1), skip1(C3_0-1,C5_0), copy1(C5_0,C1_0), skip1(C1_0,C3_0), copy1(C3_0,B).
+(r108) p43(A,B) :- mk_lowercase(A,C), skip1(C,C1_0-1), mk_lowercase(C1_0-1,C1_0), copy1(C1_0,C2_0), skip1(C2_0,C4_0-1), copy1(C4_0-1,C4_0), skip1(C4_0,C5_0), copy1(C5_0,B).
+(r109) p45(A,B) :- mk_uppercase(A,C), mk_lowercase(C,C1_0-1), mk_uppercase(C1_0-1,C1_0), mk_uppercase(C1_0,C2_0), skip1(C2_0,C4_0-1), copy1(C4_0-1,C4_0), skip1(C4_0,C5_0), copy1(C5_0,B).
+(r110) p79(A,B) :- skip1(A,C0_0), copy1(C0_0,C), mk_uppercase(C,C2_0), skip1(C2_0,C3_0-1), copy1(C3_0-1,C1_0), mk_uppercase(C1_0,C3_0), skip1(C3_0,C5_0), copy1(C5_0,B).
+(r111) p118(A,B) :- copy1(A,C), skip1(C,C1_0-1), copy1(C1_0-1,C2_0-1), copy1(C2_0-1,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C2_0), mk_lowercase(C2_0,C4_0), copy1(C4_0,B).
+(r112) p124(A,B) :- mk_lowercase(A,C), copy1(C,C1_0-1), skip1(C1_0-1,C2_0-1), copy1(C2_0-1,C1_0), copy1(C1_0,C3_0), copy1(C3_0,C2_0), skip1(C2_0,C4_0), copy1(C4_0,B).
+(r113) p137(A,B) :- mk_uppercase(A,C), skip1(C,C1_0-2), copy1(C1_0-2,C1_0-1), copy1(C1_0-1,C2_0-1), copy1(C2_0-1,C1_0), mk_uppercase(C1_0,C2_0), skip1(C2_0,C4_0), copy1(C4_0,B).
+(r114) p138(A,B) :- mk_lowercase(A,C0_0), skip1(C0_0,C1_0-2), copy1(C1_0-2,C1_0-1), copy1(C1_0-1,C2_0-1), copy1(C2_0-1,C), skip1(C,C2_0), copy1(C2_0,C1_0), mk_uppercase(C1_0,B).
+(r115) p156(A,B) :- skip1(A,C), skip1(C,C1_0-2), copy1(C1_0-2,C1_0-1), skip1(C1_0-1,C2_0-1), copy1(C2_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,C4_0), copy1(C4_0,B).
+(r116) p187(A,B) :- skip1(A,C0_0), skip1(C0_0,C1_0-1), mk_uppercase(C1_0-1,C), copy1(C,C2_0), copy1(C2_0,C1_0), skip1(C1_0,C3_0), copy1(C3_0,C6_0), copy1(C6_0,B).
+(r117) p188(A,B) :- mk_lowercase(A,C), copy1(C,C1_0-2), copy1(C1_0-2,C1_0-1), skip1(C1_0-1,C2_0-1), copy1(C2_0-1,C4_0), copy1(C4_0,C1_0), copy1(C1_0,C2_0), mk_lowercase(C2_0,B).
+(r118) p2(A,B) :- mk_uppercase(A,C), mk_lowercase(C,C1_0-2), mk_uppercase(C1_0-2,C1_0-1), copy1(C1_0-1,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C4_0), skip1(C4_0,C6_0), copy1(C6_0,B).
+(r119) p44(A,B) :- mk_uppercase(A,C0_0), mk_lowercase(C0_0,C), skip1(C,C2_0), skip1(C2_0,C3_0), skip1(C3_0,C4_0), skip1(C4_0,C5_0), copy1(C5_0,C1_0), copy1(C1_0,B).
+(r120) p192(A,B) :- copy1(A,C0_0), copy1(C0_0,C), mk_lowercase(C,C2_0-1), copy1(C2_0-1,C2_0), mk_uppercase(C2_0,C3_0-1), skip1(C3_0-1,C5_0-1), copy1(C5_0-1,C1_0), copy1(C1_0,C4_0), copy1(C4_0,C3_0), skip1(C3_0,C5_0), copy1(C5_0,B).
+(r121) p48_1(A,B) :- copy1(A,C0_0), copy1(C0_0,C), copy1(C,C2_0), copy1(C2_0,C1_0), mk_uppercase(C1_0,B).
+(r122) p48_1(A,B) :- skip1(A,C), p48_1(C,B).
+(r123) p131_1(A,B) :- is_lowercase(A), skip1(A,C1_0-1), copy1(C1_0-1,C1_0), mk_lowercase(C1_0,C2_0), copy1(C2_0,B).
+(r124) p131_1(A,B) :- skip1(A,C), p131_1(C,B).
+(r125) p60(A,B) :- is_lowercase(A), copy1(A,C1_0-1), copy1(C1_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r126) p60(A,B) :- mk_lowercase(A,C0_0), copy1(C0_0,C), p60(C,B).
+====================
+MaxSAT solving... (23949 vars, 71427 hard, 2543 soft)
+number of rules: 128
+program size: 428
+(inv1) inv1(X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,X13,X14,X15,X16,X17,X18,X19,X20,X21,X22,X23,X24) :- copy1(X1,X2), copy1(X3,X4), copy1(X5,X6), copy1(X7,X8), copy1(X9,X10), copy1(X11,X12), copy1(X13,X14), skip1(X15,X16), skip1(X17,X18), skip1(X19,X20), skip1(X21,X22), skip1(X23,X24).
+(inv2) inv2(X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,X13,X14,X15,X16,X17,X18,X19,X20,X21,X22,X23,X24,X25,X26) :- copy1(X1,X2), copy1(X3,X4), copy1(X5,X6), copy1(X7,X8), copy1(X9,X10), mk_uppercase(X11,X12), mk_uppercase(X13,X14), mk_uppercase(X15,X16), skip1(X17,X18), skip1(X19,X20), skip1(X21,X22), skip1(X23,X24), skip1(X25,X26).
+(r1) p4(A,B) :- copy1(A,C), copy1(C,B).
+(r2) p6(A,B) :- not_empty(A), copy1(A,B).
+(r3) p11(A,B) :- skip1(A,C), mk_uppercase(C,B).
+(r4) p14(A,B) :- not_empty(A), mk_lowercase(A,B).
+(r5) p15(A,B) :- not_empty(A), skip1(A,B).
+(r6) p32(A,B) :- skip1(A,C), mk_lowercase(C,B).
+(r7) p50(A,B) :- mk_lowercase(A,C), mk_uppercase(C,B).
+(r8) p59(A,B) :- inv1(C,B,C,B,C,B,C,B,C,B,C,B,C,B,A,C,A,C,A,C,A,C,A,C).
+(r9) p72(A,B) :- copy1(A,C), mk_lowercase(C,B).
+(r10) p78(A,B) :- not_empty(A), mk_uppercase(A,B).
+(r11) p95(A,B) :- mk_lowercase(A,C), copy1(C,B).
+(r12) p48(A,B) :- copy1(A,C), p48_1(C,B).
+(r13) p131(A,B) :- copy1(A,C), p131_1(C,B).
+(r14) p1(A,B) :- inv2(C0_0,C,C3_0,B,C0_0,C,C0_0,C,C0_0,C,C,C1_0,C,C1_0,C,C1_0,C1_0,C3_0,C1_0,C3_0,C1_0,C3_0,C1_0,C3_0,C1_0,C3_0), mk_lowercase(A,C0_0).
+(r15) p19(A,B) :- inv1(C1_0,C2_0,C2_0,B,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1), mk_lowercase(A,C), mk_lowercase(C1_0-1,C1_0).
+(r16) p40(A,B) :- inv2(A,C,C,C1_0-1,C1_0-1,C1_0,A,C,A,C,C2_0,B,C2_0,B,C2_0,B,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0).
+(r17) p71(A,B) :- inv1(C1_0-1,C1_0,C1_0,C2_0,C2_0,B,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1), mk_lowercase(A,C).
+(r18) p80(A,B) :- inv1(C,C1_0-1,C1_0-1,C1_0,C2_0,B,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0), mk_lowercase(A,C).
+(r19) p85(A,B) :- inv1(C1_0-1,C1_0,C2_0,B,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,A,C,C,C1_0-1,A,C,A,C,A,C), mk_lowercase(C1_0,C2_0).
+(r20) p92(A,B) :- inv1(A,C0_0,C0_0,C,C3_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,C,C1_0,C1_0,C3_0,C,C1_0,C,C1_0,C,C1_0).
+(r21) p96(A,B) :- inv1(C1_0-1,C1_0,C1_0,C2_0,C2_0,B,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,A,C,C,C1_0-1,A,C,A,C,A,C).
+(r22) p98(A,B) :- inv2(A,C,C1_0,C2_0,C2_0,B,A,C,A,C,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1).
+(r23) p106(A,B) :- inv2(C0_0,C,C,C2_0,C2_0,C1_0,C0_0,C,C0_0,C,C1_0,B,C1_0,B,C1_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r24) p108(A,B) :- copy1(A,C), copy1(C,C1_0-1), copy1(C1_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r25) p111(A,B) :- inv2(A,C0_0,C0_0,C,C2_0,C1_0,A,C0_0,A,C0_0,C1_0,B,C1_0,B,C1_0,B,C,C2_0,C,C2_0,C,C2_0,C,C2_0,C,C2_0).
+(r26) p135(A,B) :- inv1(A,C0_0,C0_0,C,C1_0,C3_0,C3_0,B,A,C0_0,A,C0_0,A,C0_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0).
+(r27) p145(A,B) :- inv1(A,C,C1_0-1,C1_0,C2_0,B,A,C,A,C,A,C,A,C,C,C1_0-1,C1_0,C2_0,C,C1_0-1,C,C1_0-1,C,C1_0-1).
+(r28) p155(A,B) :- copy1(A,C), copy1(C,C1_0-1), copy1(C1_0-1,C1_0), mk_lowercase(C1_0,C2_0), copy1(C2_0,B).
+(r29) p3(A,B) :- inv1(C3_0,B,C3_0,B,C3_0,B,C3_0,B,C3_0,B,C3_0,B,C3_0,B,A,C,C,C1_0,C1_0,C2_0,C2_0,C3_0,A,C).
+(r30) p47(A,B) :- inv2(C2_0-1,C2_0,C2_0-1,C2_0,C2_0-1,C2_0,C2_0-1,C2_0,C2_0-1,C2_0,A,C,C,C1_0,C2_0,B,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1).
+(r31) p49(A,B) :- inv2(C0_0-1,C0_0,C0_0-1,C0_0,C0_0-1,C0_0,C0_0-1,C0_0,C0_0-1,C0_0,C0_0,C,C,C1_0,C0_0,C,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1), mk_lowercase(C1_0,B).
+(r32) p75(A,B) :- copy1(A,C0_0), mk_lowercase(C0_0,C1_0-1), copy1(C1_0-1,C), mk_uppercase(C,C1_0), mk_lowercase(C1_0,B).
+(r33) p103(A,B) :- inv2(C2_0-1,C2_0,C2_0-1,C2_0,C2_0-1,C2_0,C2_0-1,C2_0,C2_0-1,C2_0,C2_0,B,C2_0,B,C2_0,B,A,C,C,C1_0,C1_0,C2_0-1,A,C,A,C).
+(r34) p161(A,B) :- inv2(A,C,A,C,A,C,A,C,A,C,C3_0,B,C3_0,B,C3_0,B,C,C1_0,C1_0,C2_0,C2_0,C3_0,C,C1_0,C,C1_0).
+(r35) p165(A,B) :- inv2(C2_0,B,C2_0,B,C2_0,B,C2_0,B,C2_0,B,C2_0-1,C2_0,C2_0-1,C2_0,C2_0-1,C2_0,C,C1_0,C1_0,C2_0-1,C,C1_0,C,C1_0,C,C1_0), mk_lowercase(A,C).
+(r36) p172(A,B) :- inv2(C,C1_0,C3_0,B,C,C1_0,C,C1_0,C,C1_0,A,C,A,C,A,C,C1_0,C2_0,C2_0,C3_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0).
+(r37) p200(A,B) :- skip1(A,C), skip1(C,C1_0), skip1(C1_0,C2_0), skip1(C2_0,C3_0), mk_uppercase(C3_0,B).
+(r38) p140(A,B) :- inv1(C1_0,B,C1_0,B,C1_0,B,C1_0,B,C1_0,B,C1_0,B,C1_0,B,A,C,C,C1_0-1,C1_0-1,C2_0,A,C,A,C), mk_lowercase(C2_0,C1_0).
+(r39) p5(A,B) :- inv1(A,C,C1_0,B,A,C,A,C,A,C,A,C,A,C,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0).
+(r40) p8(A,B) :- copy1(A,C), mk_lowercase(C,C1_0), copy1(C1_0,B).
+(r41) p16(A,B) :- inv2(C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C,B,C,B,C,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r42) p21(A,B) :- mk_lowercase(A,C), copy1(C,C1_0), copy1(C1_0,B).
+(r43) p34(A,B) :- inv1(C1_0,B,C1_0,B,C1_0,B,C1_0,B,C1_0,B,C1_0,B,C1_0,B,A,C,C,C1_0,A,C,A,C,A,C).
+(r44) p35(A,B) :- copy1(A,C), copy1(C,C1_0), copy1(C1_0,B).
+(r45) p67(A,B) :- inv1(C,C1_0,C1_0,B,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,A,C,A,C,A,C,A,C,A,C).
+(r46) p74(A,B) :- skip1(A,C), skip1(C,C1_0), mk_uppercase(C1_0,B).
+(r47) p166(A,B) :- inv2(C,B,C,B,C,B,C,B,C,B,C0_0,C,C0_0,C,C0_0,C,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r48) p167(A,B) :- inv1(C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,A,C,A,C,A,C,A,C,A,C), mk_lowercase(C1_0,B).
+(r49) p179(A,B) :- mk_lowercase(A,C0_0), mk_uppercase(C0_0,C), copy1(C,B).
+(r50) p7(A,B) :- inv2(A,C0_0,C0_0,C,A,C0_0,A,C0_0,A,C0_0,C1_0,B,C1_0,B,C1_0,B,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0).
+(r51) p102(A,B) :- inv1(A,C0_0,C0_0,C,C1_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0).
+(r52) p119(A,B) :- mk_lowercase(A,C0_0), copy1(C0_0,C), copy1(C,C1_0), copy1(C1_0,B).
+(r53) p127(A,B) :- inv1(C0_0,C,C1_0,B,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0), mk_lowercase(C,C1_0).
+(r54) p129(A,B) :- mk_uppercase(A,C), mk_uppercase(C,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r55) p160(A,B) :- skip1(A,C), skip1(C,C1_0-1), mk_uppercase(C1_0-1,C1_0), mk_uppercase(C1_0,B).
+(r56) p163(A,B) :- inv1(A,C,C2_0,B,A,C,A,C,A,C,A,C,A,C,C,C1_0,C1_0,C2_0,C,C1_0,C,C1_0,C,C1_0).
+(r57) p176(A,B) :- inv2(C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0,B,C1_0,B,C1_0,B,A,C,C,C1_0-1,A,C,A,C,A,C).
+(r58) p184(A,B) :- mk_uppercase(A,C), copy1(C,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r59) p189(A,B) :- inv2(C1_0,B,C1_0,B,C1_0,B,C1_0,B,C1_0,B,C0_0,C,C0_0,C,C0_0,C,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0), mk_lowercase(A,C0_0).
+(r60) p65(A,B) :- inv2(A,C0_0,C0_0,C,A,C0_0,A,C0_0,A,C0_0,C2_0,C1_0,C3_0,B,C2_0,C1_0,C,C2_0,C,C2_0,C,C2_0,C,C2_0,C,C2_0), mk_lowercase(C1_0,C3_0).
+(r61) p90(A,B) :- copy1(A,C0_0), copy1(C0_0,C), copy1(C,C2_0), copy1(C2_0,C1_0), copy1(C1_0,C3_0), mk_lowercase(C3_0,B).
+(r62) p112(A,B) :- inv1(C0_0,C,C,C2_0,C3_0,B,C0_0,C,C0_0,C,C0_0,C,C0_0,C,A,C0_0,C1_0,C3_0,A,C0_0,A,C0_0,A,C0_0), mk_lowercase(C2_0,C1_0).
+(r63) p125(A,B) :- inv2(C2_0,C1_0,C3_0,B,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C0_0,C,C0_0,C,C0_0,C,C,C2_0,C1_0,C3_0,C,C2_0,C,C2_0,C,C2_0), mk_lowercase(A,C0_0).
+(r64) p13(A,B) :- inv2(A,C,C1_0-1,C1_0,C1_0,C3_0,C3_0,C2_0,A,C,C2_0,B,C2_0,B,C2_0,B,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1).
+(r65) p20(A,B) :- inv2(C0_0,C,C,C2_0,C2_0,C1_0,C0_0,C,C0_0,C,C0_0-1,C0_0,C1_0,B,C0_0-1,C0_0,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1).
+(r66) p88(A,B) :- inv2(C,C1_0,C2_0,C3_0,C3_0,B,C,C1_0,C,C1_0,A,C,C2_0-1,C2_0,A,C,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1).
+(r67) p91(A,B) :- inv1(C,C1_0-2,C1_0-2,C1_0-1,C1_0-1,C2_0,C,C1_0-2,C,C1_0-2,C,C1_0-2,C,C1_0-2,A,C,A,C,A,C,A,C,A,C), mk_lowercase(C2_0,C1_0), mk_lowercase(C1_0,B).
+(r68) p109(A,B) :- copy1(A,C0_0), copy1(C0_0,C), mk_uppercase(C,C1_0), copy1(C1_0,C3_0), copy1(C3_0,C4_0), copy1(C4_0,B).
+(r69) p122(A,B) :- inv1(C0_0,C1_0-1,C1_0-1,C,C1_0,C3_0,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1,A,C0_0,C,C1_0,A,C0_0,A,C0_0,A,C0_0), mk_lowercase(C3_0,B).
+(r70) p154(A,B) :- inv2(C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,A,C,C2_0,B,A,C,C,C1_0-1,C1_0-1,C2_0-1,C1_0,C2_0,C,C1_0-1,C,C1_0-1).
+(r71) p181(A,B) :- inv2(C0_0,C1_0-1,C1_0-1,C,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1,A,C0_0,A,C0_0,A,C0_0,C1_0,C3_0,C1_0,C3_0,C1_0,C3_0,C1_0,C3_0,C1_0,C3_0), mk_lowercase(C,C1_0), mk_lowercase(C3_0,B).
+(r72) p89(A,B) :- inv1(A,C,C3_0,C4_0,A,C,A,C,A,C,A,C,A,C,C,C1_0,C1_0,C2_0,C2_0,C3_0,C,C1_0,C,C1_0), mk_lowercase(C4_0,B).
+(r73) p9(A,B) :- inv2(C1_0,C3_0,C6_0,C2_0,C2_0,B,C1_0,C3_0,C1_0,C3_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,A,C,C,C1_0-1,C1_0-1,C2_0-1,C3_0,C5_0,C5_0,C6_0).
+(r74) p55(A,B) :- inv1(A,C0_0,C1_0-1,C,C,C2_0,C4_0,C1_0,C6_0,B,A,C0_0,A,C0_0,C0_0,C1_0-1,C2_0,C4_0,C1_0,C3_0,C3_0,C6_0,C0_0,C1_0-1).
+(r75) p114(A,B) :- inv1(C,C1_0-2,C2_0-1,C1_0,C3_0,C2_0,C2_0,C4_0,C4_0,B,C,C1_0-2,C,C1_0-2,A,C,C1_0-1,C2_0-1,C1_0,C3_0,A,C,A,C), mk_lowercase(C1_0-2,C1_0-1).
+(r76) p130(A,B) :- inv2(A,C0_0,C0_0,C,C3_0-1,C4_0,C4_0,C1_0,A,C0_0,C3_0,B,C3_0,B,C3_0,B,C2_0,C3_0-2,C1_0,C3_0,C2_0,C3_0-2,C2_0,C3_0-2,C2_0,C3_0-2), mk_lowercase(C,C2_0), mk_lowercase(C3_0-2,C3_0-1).
+(r77) p149(A,B) :- inv2(A,C0_0,C0_0,C1_0-1,C1_0-1,C,C3_0,C6_0,C6_0,B,C4_0,C1_0,C4_0,C1_0,C4_0,C1_0,C,C2_0,C2_0,C4_0,C1_0,C3_0,C,C2_0,C,C2_0).
+(r78) p170(A,B) :- inv1(A,C0_0,C1_0-2,C1_0-1,C2_0,C,C3_0,C5_0,A,C0_0,A,C0_0,A,C0_0,C0_0,C1_0-2,C1_0-1,C2_0,C,C1_0,C1_0,C3_0,C0_0,C1_0-2), mk_lowercase(C5_0,B).
+(r79) p199(A,B) :- inv2(C,C1_0,C2_0-1,C3_0-1,C2_0,C4_0,C5_0,B,C,C1_0,A,C,A,C,A,C,C1_0,C2_0-1,C3_0,C5_0,C1_0,C2_0-1,C1_0,C2_0-1,C1_0,C2_0-1), mk_lowercase(C3_0-1,C2_0), mk_lowercase(C4_0,C3_0).
+(r80) p10(A,B) :- inv2(C2_0-1,C,C,C2_0,C4_0,C1_0,C2_0-1,C,C2_0-1,C,C3_0,B,C3_0,B,C3_0,B,A,C0_0,C0_0,C1_0-1,C1_0-1,C2_0-1,C2_0,C4_0,C1_0,C3_0).
+(r81) p22(A,B) :- inv2(C1_0-1,C,C2_0,C4_0,C4_0,C1_0,C1_0-1,C,C1_0-1,C,C1_0,C3_0,C1_0,C3_0,C1_0,C3_0,A,C0_0,C0_0,C1_0-1,C,C3_0-1,A,C0_0,A,C0_0), mk_lowercase(C3_0-1,C2_0), mk_lowercase(C3_0,B).
+(r82) p84(A,B) :- inv2(C4_0-1,C1_0,C2_0,C4_0,C4_0,B,C4_0-1,C1_0,C4_0-1,C1_0,A,C,C1_0,C2_0,A,C,C,C1_0-1,C1_0-1,C2_0-1,C2_0-1,C3_0,C3_0,C4_0-1,C,C1_0-1).
+(r83) p142(A,B) :- inv1(A,C0_0,C0_0,C,C4_0-1,C5_0,C5_0,C3_0,A,C0_0,A,C0_0,A,C0_0,C,C1_0,C1_0,C3_0-1,C3_0-1,C4_0-1,C3_0,C4_0,C,C1_0), mk_lowercase(C4_0,B).
+(r84) p186(A,B) :- inv2(C0_0,C,C1_0,C3_0,C0_0,C,C0_0,C,C0_0,C,C5_0,C1_0,C5_0,C1_0,C5_0,C1_0,A,C0_0,C,C2_0,C2_0,C3_0-1,C3_0-1,C4_0,C4_0,C5_0), mk_lowercase(C3_0,B).
+(r85) p23(A,B) :- inv1(C2_0,C3_0-1,C3_0-1,C3_0,C4_0,B,C2_0,C3_0-1,C2_0,C3_0-1,C2_0,C3_0-1,C2_0,C3_0-1,A,C,C,C1_0,C3_0,C4_0,A,C,A,C), mk_lowercase(C1_0,C2_0).
+(r86) p24(A,B) :- inv2(C,C2_0,C3_0-1,C1_0,C,C2_0,C,C2_0,C,C2_0,C3_0,B,C3_0,B,C3_0,B,A,C0_0,C2_0,C3_0-1,C1_0,C3_0,A,C0_0,A,C0_0), mk_lowercase(C0_0,C).
+(r87) p26(A,B) :- inv2(C0_0,C1_0-1,C1_0-1,C,C,C3_0,C3_0,C2_0,C1_0,B,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r88) p56(A,B) :- inv1(C0_0,C,C,C2_0,C2_0,C1_0,C3_0,C5_0,C5_0,B,C0_0,C,C0_0,C,A,C0_0,C1_0,C3_0,A,C0_0,A,C0_0,A,C0_0).
+(r89) p58(A,B) :- inv1(A,C0_0,C0_0,C,C3_0,C4_0,C4_0,B,A,C0_0,A,C0_0,A,C0_0,C,C1_0,C1_0,C3_0-1,C,C1_0,C,C1_0,C,C1_0), mk_lowercase(C3_0-1,C3_0).
+(r90) p61(A,B) :- inv2(C1_0-1,C2_0-1,C2_0-1,C1_0,C1_0,C3_0,C3_0,C2_0,C1_0-1,C2_0-1,C2_0,B,C2_0,B,C2_0,B,A,C,C,C1_0-1,A,C,A,C,A,C).
+(r91) p86(A,B) :- inv2(C1_0-1,C,C3_0,C5_0,C5_0,B,C1_0-1,C,C1_0-1,C,A,C0_0,A,C0_0,A,C0_0,C0_0,C1_0-1,C,C1_0,C1_0,C3_0,C0_0,C1_0-1,C0_0,C1_0-1).
+(r92) p87(A,B) :- inv2(C0_0,C1_0-1,C1_0-1,C,C3_0,B,C0_0,C1_0-1,C0_0,C1_0-1,C,C1_0,C,C1_0,C,C1_0,A,C0_0-1,C1_0,C3_0,A,C0_0-1,A,C0_0-1,A,C0_0-1), mk_lowercase(C0_0-1,C0_0).
+(r93) p104(A,B) :- inv1(C0_0,C1_0-1,C1_0-1,C,C5_0,B,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1,A,C0_0,C,C1_0,C1_0,C3_0,C3_0,C5_0,A,C0_0).
+(r94) p107(A,B) :- inv1(A,C0_0,C3_0,C5_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,C,C2_0,C1_0,C3_0,C,C2_0,C,C2_0,C,C2_0), mk_lowercase(C0_0,C), mk_lowercase(C2_0,C1_0), mk_lowercase(C5_0,B).
+(r95) p139(A,B) :- inv2(A,C,C1_0-1,C2_0-1,A,C,A,C,A,C,C4_0,B,C4_0,B,C4_0,B,C,C1_0-1,C1_0,C2_0,C2_0,C4_0,C,C1_0-1,C,C1_0-1), mk_lowercase(C2_0-1,C1_0).
+(r96) p150(A,B) :- inv1(A,C0_0,C0_0,C,C3_0-1,C3_0,C3_0,C4_0,C4_0,B,A,C0_0,A,C0_0,C,C1_0,C1_0,C3_0-1,C,C1_0,C,C1_0,C,C1_0).
+(r97) p174(A,B) :- inv1(C0_0-1,C0_0,C1_0-1,C,C0_0-1,C0_0,C0_0-1,C0_0,C0_0-1,C0_0,C0_0-1,C0_0,C0_0-1,C0_0,A,C0_0-1,C0_0,C1_0-1,C,C1_0,C1_0,C3_0,A,C0_0-1), mk_lowercase(C3_0,B).
+(r98) p190(A,B) :- copy1(A,C0_0-1), copy1(C0_0-1,C0_0), mk_lowercase(C0_0,C1_0-1), copy1(C1_0-1,C), mk_lowercase(C,C1_0), mk_lowercase(C1_0,C3_0), copy1(C3_0,B).
+(r99) p29(A,B) :- inv1(C,C1_0-1,C2_0-2,C2_0-1,C3_0-1,C1_0,C2_0,C4_0,C4_0,B,C,C1_0-1,C,C1_0-1,A,C,C1_0-1,C2_0-2,C2_0-1,C3_0-1,C1_0,C3_0,A,C), mk_lowercase(C3_0,C2_0).
+(r100) p30(A,B) :- inv1(A,C0_0,C0_0,C,C4_0-1,C3_0,C3_0,C5_0,C5_0,C4_0,C6_0,B,A,C0_0,C,C1_0,C1_0,C3_0-1,C3_0-1,C4_0-1,C,C1_0,C,C1_0), mk_lowercase(C4_0,C6_0).
+(r101) p38(A,B) :- inv2(A,C0_0,C2_0-1,C,C3_0-1,C2_0,C3_0,C6_0,C6_0,B,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C0_0,C1_0-1,C1_0-1,C2_0-1,C,C3_0-1,C1_0,C3_0,C0_0,C1_0-1).
+(r102) p120(A,B) :- inv1(A,C0_0,C,C2_0-1,C3_0-1,C1_0,C1_0,C4_0,C4_0,C3_0,C3_0,C5_0,C5_0,B,C2_0,C3_0-1,C2_0,C3_0-1,C2_0,C3_0-1,C2_0,C3_0-1,C2_0,C3_0-1), mk_lowercase(C0_0,C), mk_lowercase(C2_0-1,C2_0).
+(r103) p123(A,B) :- inv2(C0_0,C,C,C2_0,C5_0,C7_0,C0_0,C,C0_0,C,C4_0-1,C4_0,C4_0,C3_0,C4_0-1,C4_0,C1_0,C4_0-1,C3_0,C5_0,C1_0,C4_0-1,C1_0,C4_0-1,C1_0,C4_0-1), mk_lowercase(A,C0_0), mk_lowercase(C2_0,C1_0), mk_lowercase(C7_0,B).
+(r104) p31(A,B) :- inv1(A,C0_0,C1_0-2,C1_0-1,C2_0,C,C5_0,C8_0,C8_0,B,A,C0_0,A,C0_0,C0_0,C1_0-2,C1_0-1,C2_0,C,C1_0,C1_0,C3_0,C3_0,C5_0).
+(r105) p41(A,B) :- inv2(C,C1_0-1,C3_0,C1_0,C,C1_0-1,C,C1_0-1,C,C1_0-1,C8_0,B,C8_0,B,C8_0,B,A,C,C1_0-1,C2_0-1,C2_0-1,C3_0,C1_0,C2_0,C2_0,C4_0), inv2(C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C8_0,B,C8_0,B,C8_0,B,C4_0,C6_0,C6_0,C8_0,A,C,A,C,A,C).
+(r106) p54(A,B) :- copy1(A,C0_0), copy1(C0_0,C), mk_lowercase(C,C2_0), copy1(C2_0,C3_0-1), copy1(C3_0-1,C1_0), mk_uppercase(C1_0,C4_0), copy1(C4_0,C6_0), copy1(C6_0,C3_0), mk_uppercase(C3_0,C5_0), mk_lowercase(C5_0,B).
+(r107) p171(A,B) :- inv1(C0_0,C,C,C2_0-1,C3_0-2,C2_0,C5_0,C1_0,C3_0,B,C0_0,C,C0_0,C,A,C0_0,C2_0-1,C3_0-2,C2_0,C3_0-1,C3_0-1,C5_0,C1_0,C3_0).
+(r108) p43(A,B) :- inv1(C1_0,C2_0,C4_0-1,C4_0,C5_0,B,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C,C1_0-1,C2_0,C4_0-1,C4_0,C5_0,C,C1_0-1,C,C1_0-1), mk_lowercase(A,C), mk_lowercase(C1_0-1,C1_0).
+(r109) p45(A,B) :- inv2(C4_0-1,C4_0,C5_0,B,C4_0-1,C4_0,C4_0-1,C4_0,C4_0-1,C4_0,A,C,C1_0-1,C1_0,C1_0,C2_0,C2_0,C4_0-1,C4_0,C5_0,C2_0,C4_0-1,C2_0,C4_0-1,C2_0,C4_0-1), mk_lowercase(C,C1_0-1).
+(r110) p79(A,B) :- inv2(C0_0,C,C3_0-1,C1_0,C5_0,B,C0_0,C,C0_0,C,C,C2_0,C1_0,C3_0,C,C2_0,A,C0_0,C2_0,C3_0-1,C3_0,C5_0,A,C0_0,A,C0_0).
+(r111) p118(A,B) :- inv1(A,C,C1_0-1,C2_0-1,C2_0-1,C1_0,C3_0,C2_0,C4_0,B,A,C,A,C,C,C1_0-1,C1_0,C3_0,C,C1_0-1,C,C1_0-1,C,C1_0-1), mk_lowercase(C2_0,C4_0).
+(r112) p124(A,B) :- inv1(C,C1_0-1,C2_0-1,C1_0,C1_0,C3_0,C3_0,C2_0,C4_0,B,C,C1_0-1,C,C1_0-1,C1_0-1,C2_0-1,C2_0,C4_0,C1_0-1,C2_0-1,C1_0-1,C2_0-1,C1_0-1,C2_0-1), mk_lowercase(A,C).
+(r113) p137(A,B) :- inv2(C1_0-2,C1_0-1,C1_0-1,C2_0-1,C2_0-1,C1_0,C4_0,B,C1_0-2,C1_0-1,A,C,C1_0,C2_0,A,C,C,C1_0-2,C2_0,C4_0,C,C1_0-2,C,C1_0-2,C,C1_0-2).
+(r114) p138(A,B) :- inv2(C1_0-2,C1_0-1,C1_0-1,C2_0-1,C2_0-1,C,C2_0,C1_0,C1_0-2,C1_0-1,C1_0,B,C1_0,B,C1_0,B,C0_0,C1_0-2,C,C2_0,C0_0,C1_0-2,C0_0,C1_0-2,C0_0,C1_0-2), mk_lowercase(A,C0_0).
+(r115) p156(A,B) :- inv1(C1_0-2,C1_0-1,C2_0-1,C1_0,C1_0,C2_0,C2_0,C4_0,C4_0,B,C1_0-2,C1_0-1,C1_0-2,C1_0-1,A,C,C,C1_0-2,C1_0-1,C2_0-1,A,C,A,C).
+(r116) p187(A,B) :- inv2(C,C2_0,C2_0,C1_0,C3_0,C6_0,C6_0,B,C,C2_0,C1_0-1,C,C1_0-1,C,C1_0-1,C,A,C0_0,C0_0,C1_0-1,C1_0,C3_0,A,C0_0,A,C0_0).
+(r117) p188(A,B) :- inv1(C,C1_0-2,C1_0-2,C1_0-1,C2_0-1,C4_0,C4_0,C1_0,C1_0,C2_0,C,C1_0-2,C,C1_0-2,C1_0-1,C2_0-1,C1_0-1,C2_0-1,C1_0-1,C2_0-1,C1_0-1,C2_0-1,C1_0-1,C2_0-1), mk_lowercase(A,C), mk_lowercase(C2_0,B).
+(r118) p2(A,B) :- inv2(C1_0-1,C1_0,C6_0,B,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,A,C,C1_0-2,C1_0-1,A,C,C1_0,C2_0,C2_0,C4_0,C4_0,C6_0,C1_0,C2_0,C1_0,C2_0), mk_lowercase(C,C1_0-2).
+(r119) p44(A,B) :- inv2(C5_0,C1_0,C1_0,B,C5_0,C1_0,C5_0,C1_0,C5_0,C1_0,A,C0_0,A,C0_0,A,C0_0,C,C2_0,C2_0,C3_0,C3_0,C4_0,C4_0,C5_0,C,C2_0), mk_lowercase(C0_0,C).
+(r120) p192(A,B) :- inv1(A,C0_0,C0_0,C,C2_0-1,C2_0,C5_0-1,C1_0,C1_0,C4_0,C4_0,C3_0,C5_0,B,C3_0-1,C5_0-1,C3_0,C5_0,C3_0-1,C5_0-1,C3_0-1,C5_0-1,C3_0-1,C5_0-1), mk_lowercase(C,C2_0-1), mk_uppercase(C2_0,C3_0-1).
+(r121) p48_1(A,B) :- copy1(A,C0_0), copy1(C0_0,C), copy1(C,C2_0), copy1(C2_0,C1_0), mk_uppercase(C1_0,B).
+(r122) p48_1(A,B) :- skip1(A,C), p48_1(C,B).
+(r123) p131_1(A,B) :- inv1(C1_0-1,C1_0,C2_0,B,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,A,C1_0-1,A,C1_0-1,A,C1_0-1,A,C1_0-1,A,C1_0-1), is_lowercase(A), mk_lowercase(C1_0,C2_0).
+(r124) p131_1(A,B) :- skip1(A,C), p131_1(C,B).
+(r125) p60(A,B) :- is_lowercase(A), copy1(A,C1_0-1), copy1(C1_0-1,C1_0), copy1(C1_0,C2_0), copy1(C2_0,B).
+(r126) p60(A,B) :- mk_lowercase(A,C0_0), copy1(C0_0,C), p60(C,B).
+====================
