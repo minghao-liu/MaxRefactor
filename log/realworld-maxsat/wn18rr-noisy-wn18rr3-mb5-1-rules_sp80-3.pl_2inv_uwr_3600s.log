@@ -1,0 +1,169 @@
+number of rules: 80
+program size: 383
+(r1) verbgroup(A,B) :- alsosee(F,C), memberofdomainregion(B,F), synsetdomaintopicof(E,D), hypernym(E,A).
+(r2) verbgroup(A,B) :- hypernym(B,F), alsosee(F,C), haspart(E,D), hypernym(A,D).
+(r3) verbgroup(A,B) :- derivationallyrelatedform(D,A), hypernym(B,F), alsosee(F,C), hypernym(E,D).
+(r4) verbgroup(A,B) :- memberofdomainusage(D,F), alsosee(F,C), memberofdomainregion(E,A), memberofdomainusage(B,D).
+(r5) verbgroup(A,B) :- instancehypernym(A,F), alsosee(E,B), alsosee(F,C), haspart(A,D).
+(r6) verbgroup(A,B) :- derivationallyrelatedform(F,E), alsosee(F,C), similarto(D,B), instancehypernym(A,C).
+(r7) verbgroup(A,B) :- haspart(F,E), derivationallyrelatedform(A,D), alsosee(F,C), hypernym(B,E).
+(r8) verbgroup(A,B) :- hypernym(B,C), instancehypernym(A,D), alsosee(F,C), memberofdomainusage(E,A).
+(r9) verbgroup(A,B) :- memberofdomainregion(D,F), similarto(C,A), alsosee(F,C), haspart(E,B).
+(r10) verbgroup(A,B) :- haspart(D,E), instancehypernym(C,A), alsosee(F,C), hypernym(B,E).
+(r11) verbgroup(A,B) :- haspart(C,B), memberofdomainusage(A,B), synsetdomaintopicof(A,B).
+(r12) verbgroup(A,B) :- memberofdomainusage(C,A), membermeronym(E,B), alsosee(F,C), similarto(D,B).
+(r13) verbgroup(A,B) :- haspart(D,B), memberofdomainregion(A,E), similarto(B,C), haspart(E,B).
+(r14) verbgroup(A,B) :- similarto(B,D), similarto(C,A), alsosee(F,C), hypernym(F,E).
+(r15) verbgroup(A,B) :- membermeronym(D,E), haspart(A,E), memberofdomainregion(E,F), similarto(B,C).
+(r16) verbgroup(A,B) :- instancehypernym(A,D), instancehypernym(E,F), similarto(B,C), derivationallyrelatedform(F,B).
+(r17) verbgroup(A,B) :- similarto(A,C), synsetdomaintopicof(A,D), similarto(B,C), hypernym(E,C).
+(r18) verbgroup(A,B) :- instancehypernym(B,D), alsosee(F,C), memberofdomainusage(F,A), similarto(F,E).
+(r19) verbgroup(A,B) :- membermeronym(D,E), hypernym(E,A), similarto(B,C), instancehypernym(F,A).
+(r20) verbgroup(A,B) :- derivationallyrelatedform(A,D), memberofdomainregion(C,D), similarto(B,C), hypernym(D,E).
+(r21) verbgroup(A,B) :- derivationallyrelatedform(E,A), memberofdomainregion(D,A), similarto(B,C), hypernym(A,D).
+(r22) verbgroup(A,B) :- instancehypernym(F,D), alsosee(F,C), memberofdomainregion(E,A), instancehypernym(B,F).
+(r23) verbgroup(A,B) :- similarto(B,D), membermeronym(D,B), derivationallyrelatedform(A,D), similarto(B,C).
+(r24) verbgroup(A,B) :- alsosee(E,B), memberofdomainusage(D,C), similarto(B,C), instancehypernym(A,C).
+(r25) verbgroup(A,B) :- similarto(C,A), instancehypernym(D,E), alsosee(F,C), instancehypernym(B,E).
+(r26) verbgroup(A,B) :- membermeronym(C,B), memberofdomainusage(A,D), haspart(D,A).
+(r27) verbgroup(A,B) :- haspart(A,E), similarto(B,E), similarto(B,C), instancehypernym(D,C).
+(r28) verbgroup(A,B) :- memberofdomainusage(D,E), memberofdomainregion(D,B), similarto(B,C), memberofdomainusage(A,E).
+(r29) verbgroup(A,B) :- instancehypernym(E,D), memberofdomainusage(A,D), derivationallyrelatedform(C,B), similarto(B,C).
+(r30) verbgroup(A,B) :- haspart(B,D), memberofdomainregion(A,D), instancehypernym(D,C).
+(r31) verbgroup(A,B) :- similarto(C,A), alsosee(F,C), memberofdomainregion(E,B), synsetdomaintopicof(D,F).
+(r32) verbgroup(A,B) :- instancehypernym(C,D), alsosee(A,C), memberofdomainregion(E,B).
+(r33) verbgroup(A,B) :- memberofdomainusage(A,B), similarto(B,C), haspart(D,E), memberofdomainregion(A,D).
+(r34) verbgroup(A,B) :- instancehypernym(E,D), haspart(B,C), alsosee(F,C), haspart(E,A).
+(r35) verbgroup(A,B) :- alsosee(F,C), haspart(A,D), derivationallyrelatedform(E,B), instancehypernym(E,C).
+(r36) verbgroup(A,B) :- membermeronym(C,A), haspart(E,C), alsosee(F,C), similarto(D,B).
+(r37) verbgroup(A,B) :- haspart(B,E), alsosee(F,C), memberofdomainregion(A,D), hypernym(C,E).
+(r38) verbgroup(A,B) :- haspart(F,D), haspart(F,C), similarto(B,C), memberofdomainusage(A,E).
+(r39) verbgroup(A,B) :- alsosee(B,E), alsosee(F,C), memberofdomainregion(D,A), alsosee(C,D).
+(r40) verbgroup(A,B) :- memberofdomainregion(A,B), derivationallyrelatedform(B,A), similarto(A,C).
+(r41) verbgroup(A,B) :- derivationallyrelatedform(A,D), derivationallyrelatedform(B,A), synsetdomaintopicof(C,A), similarto(B,C).
+(r42) verbgroup(A,B) :- memberofdomainusage(D,E), membermeronym(B,A), alsosee(D,B), similarto(B,C).
+(r43) verbgroup(A,B) :- similarto(A,E), memberofdomainregion(E,F), haspart(D,A), similarto(B,C).
+(r44) verbgroup(A,B) :- alsosee(F,B), similarto(B,C), synsetdomaintopicof(D,B), memberofdomainusage(E,A).
+(r45) verbgroup(A,B) :- membermeronym(C,A), alsosee(C,B), instancehypernym(D,C).
+(r46) verbgroup(A,B) :- instancehypernym(A,D), haspart(D,C), haspart(D,A), similarto(B,C).
+(r47) verbgroup(A,B) :- memberofdomainusage(A,E), similarto(B,C), synsetdomaintopicof(D,B), alsosee(B,D).
+(r48) verbgroup(A,B) :- alsosee(E,B), memberofdomainusage(D,C), alsosee(A,C).
+(r49) verbgroup(A,B) :- derivationallyrelatedform(A,E), haspart(D,C), alsosee(D,C), similarto(B,C).
+(r50) verbgroup(A,B) :- alsosee(F,C), hypernym(C,A), synsetdomaintopicof(E,B), alsosee(D,A).
+(r51) verbgroup(A,B) :- instancehypernym(B,D), alsosee(F,C), alsosee(F,A), hypernym(C,E).
+(r52) verbgroup(A,B) :- alsosee(C,A), membermeronym(B,E), alsosee(F,C), instancehypernym(C,D).
+(r53) verbgroup(A,B) :- alsosee(E,B), similarto(D,B), memberofdomainusage(B,A), similarto(B,C).
+(r54) verbgroup(A,B) :- membermeronym(C,A), memberofdomainusage(D,B), alsosee(F,C), instancehypernym(F,E).
+(r55) verbgroup(A,B) :- alsosee(F,C), similarto(F,B), alsosee(C,D), synsetdomaintopicof(A,E).
+(r56) verbgroup(A,B) :- hypernym(E,B), alsosee(F,C), hypernym(A,D), derivationallyrelatedform(F,B).
+(r57) verbgroup(A,B) :- memberofdomainregion(C,B), derivationallyrelatedform(C,A), memberofdomainusage(A,B).
+(r58) verbgroup(A,B) :- synsetdomaintopicof(B,C), alsosee(D,B), similarto(B,C), hypernym(A,B).
+(r59) verbgroup(A,B) :- alsosee(B,A), haspart(C,A), hypernym(A,B).
+(r60) verbgroup(A,B) :- similarto(B,C), synsetdomaintopicof(F,E), alsosee(A,F), memberofdomainregion(A,D).
+(r61) verbgroup(A,B) :- memberofdomainregion(D,B), instancehypernym(E,B), hypernym(A,C).
+(r62) verbgroup(A,B) :- similarto(D,A), memberofdomainusage(D,F), similarto(A,E), similarto(B,C).
+(r63) verbgroup(A,B) :- haspart(B,C), memberofdomainregion(B,A), derivationallyrelatedform(D,C).
+(r64) verbgroup(A,B) :- alsosee(A,D), similarto(B,C), similarto(A,E), hypernym(A,D).
+(r65) verbgroup(A,B) :- synsetdomaintopicof(E,A), haspart(E,F), similarto(B,C), haspart(A,D).
+(r66) verbgroup(A,B) :- memberofdomainusage(A,D), membermeronym(B,C), similarto(E,D).
+(r67) verbgroup(A,B) :- memberofdomainregion(D,B), memberofdomainusage(D,C), memberofdomainusage(D,A).
+(r68) verbgroup(A,B) :- membermeronym(B,C), hypernym(C,A), similarto(B,C), memberofdomainregion(A,D).
+(r69) verbgroup(A,B) :- haspart(A,B), memberofdomainusage(A,D), similarto(B,C).
+(r70) verbgroup(A,B) :- haspart(D,C), synsetdomaintopicof(D,B), memberofdomainregion(A,D).
+(r71) verbgroup(A,B) :- synsetdomaintopicof(E,D), haspart(D,C), derivationallyrelatedform(A,E), similarto(B,C).
+(r72) verbgroup(A,B) :- alsosee(F,C), alsosee(D,F), derivationallyrelatedform(E,A), hypernym(C,B).
+(r73) verbgroup(A,B) :- synsetdomaintopicof(F,A), membermeronym(D,B), alsosee(F,C), haspart(C,E).
+(r74) verbgroup(A,B) :- hypernym(A,E), hypernym(D,F), similarto(B,C), derivationallyrelatedform(B,F).
+(r75) verbgroup(A,B) :- alsosee(C,A), similarto(A,B), derivationallyrelatedform(A,B).
+(r76) verbgroup(A,B) :- haspart(D,F), alsosee(F,C), derivationallyrelatedform(E,B), memberofdomainregion(A,D).
+(r77) verbgroup(A,B) :- alsosee(A,D), derivationallyrelatedform(C,E), memberofdomainregion(E,F), similarto(B,C).
+(r78) verbgroup(A,B) :- memberofdomainusage(A,C), instancehypernym(D,B), memberofdomainusage(C,B).
+(r79) verbgroup(A,B) :- memberofdomainregion(D,F), instancehypernym(D,B), similarto(A,E), similarto(B,C).
+(r80) verbgroup(A,B) :- hypernym(B,C), similarto(B,C), hypernym(A,D), alsosee(E,D).
+====================
+MaxSAT solving... (2641 vars, 10715 hard, 823 soft)
+number of rules: 82
+program size: 349
+(inv1) inv1(X1,X2,X3,X4,X5,X6) :- alsosee(X1,X2), similarto(X3,X4), similarto(X5,X6).
+(inv2) inv2(X1,X2,X3,X4,X5,X6,X7,X8) :- alsosee(X1,X2), alsosee(X3,X4), hypernym(X5,X6), hypernym(X7,X8).
+(r1) verbgroup(A,B) :- inv2(F,C,F,C,E,A,E,A), memberofdomainregion(B,F), synsetdomaintopicof(E,D).
+(r2) verbgroup(A,B) :- inv2(F,C,F,C,B,F,A,D), haspart(E,D).
+(r3) verbgroup(A,B) :- inv2(F,C,F,C,B,F,E,D), derivationallyrelatedform(D,A).
+(r4) verbgroup(A,B) :- memberofdomainusage(D,F), alsosee(F,C), memberofdomainregion(E,A), memberofdomainusage(B,D).
+(r5) verbgroup(A,B) :- instancehypernym(A,F), alsosee(E,B), alsosee(F,C), haspart(A,D).
+(r6) verbgroup(A,B) :- inv1(F,C,D,B,D,B), derivationallyrelatedform(F,E), instancehypernym(A,C).
+(r7) verbgroup(A,B) :- inv2(F,C,F,C,B,E,B,E), haspart(F,E), derivationallyrelatedform(A,D).
+(r8) verbgroup(A,B) :- inv2(F,C,F,C,B,C,B,C), instancehypernym(A,D), memberofdomainusage(E,A).
+(r9) verbgroup(A,B) :- inv1(F,C,C,A,C,A), memberofdomainregion(D,F), haspart(E,B).
+(r10) verbgroup(A,B) :- inv2(F,C,F,C,B,E,B,E), haspart(D,E), instancehypernym(C,A).
+(r11) verbgroup(A,B) :- haspart(C,B), memberofdomainusage(A,B), synsetdomaintopicof(A,B).
+(r12) verbgroup(A,B) :- inv1(F,C,D,B,D,B), memberofdomainusage(C,A), membermeronym(E,B).
+(r13) verbgroup(A,B) :- haspart(D,B), memberofdomainregion(A,E), similarto(B,C), haspart(E,B).
+(r14) verbgroup(A,B) :- inv1(F,C,B,D,C,A), hypernym(F,E).
+(r15) verbgroup(A,B) :- membermeronym(D,E), haspart(A,E), memberofdomainregion(E,F), similarto(B,C).
+(r16) verbgroup(A,B) :- instancehypernym(A,D), instancehypernym(E,F), similarto(B,C), derivationallyrelatedform(F,B).
+(r17) verbgroup(A,B) :- similarto(A,C), synsetdomaintopicof(A,D), similarto(B,C), hypernym(E,C).
+(r18) verbgroup(A,B) :- inv1(F,C,F,E,F,E), instancehypernym(B,D), memberofdomainusage(F,A).
+(r19) verbgroup(A,B) :- membermeronym(D,E), hypernym(E,A), similarto(B,C), instancehypernym(F,A).
+(r20) verbgroup(A,B) :- derivationallyrelatedform(A,D), memberofdomainregion(C,D), similarto(B,C), hypernym(D,E).
+(r21) verbgroup(A,B) :- derivationallyrelatedform(E,A), memberofdomainregion(D,A), similarto(B,C), hypernym(A,D).
+(r22) verbgroup(A,B) :- instancehypernym(F,D), alsosee(F,C), memberofdomainregion(E,A), instancehypernym(B,F).
+(r23) verbgroup(A,B) :- similarto(B,D), membermeronym(D,B), derivationallyrelatedform(A,D), similarto(B,C).
+(r24) verbgroup(A,B) :- inv1(E,B,B,C,B,C), memberofdomainusage(D,C), instancehypernym(A,C).
+(r25) verbgroup(A,B) :- inv1(F,C,C,A,C,A), instancehypernym(D,E), instancehypernym(B,E).
+(r26) verbgroup(A,B) :- membermeronym(C,B), memberofdomainusage(A,D), haspart(D,A).
+(r27) verbgroup(A,B) :- haspart(A,E), similarto(B,E), similarto(B,C), instancehypernym(D,C).
+(r28) verbgroup(A,B) :- memberofdomainusage(D,E), memberofdomainregion(D,B), similarto(B,C), memberofdomainusage(A,E).
+(r29) verbgroup(A,B) :- instancehypernym(E,D), memberofdomainusage(A,D), derivationallyrelatedform(C,B), similarto(B,C).
+(r30) verbgroup(A,B) :- haspart(B,D), memberofdomainregion(A,D), instancehypernym(D,C).
+(r31) verbgroup(A,B) :- inv1(F,C,C,A,C,A), memberofdomainregion(E,B), synsetdomaintopicof(D,F).
+(r32) verbgroup(A,B) :- instancehypernym(C,D), alsosee(A,C), memberofdomainregion(E,B).
+(r33) verbgroup(A,B) :- memberofdomainusage(A,B), similarto(B,C), haspart(D,E), memberofdomainregion(A,D).
+(r34) verbgroup(A,B) :- instancehypernym(E,D), haspart(B,C), alsosee(F,C), haspart(E,A).
+(r35) verbgroup(A,B) :- alsosee(F,C), haspart(A,D), derivationallyrelatedform(E,B), instancehypernym(E,C).
+(r36) verbgroup(A,B) :- inv1(F,C,D,B,D,B), membermeronym(C,A), haspart(E,C).
+(r37) verbgroup(A,B) :- inv2(F,C,F,C,C,E,C,E), haspart(B,E), memberofdomainregion(A,D).
+(r38) verbgroup(A,B) :- haspart(F,D), haspart(F,C), similarto(B,C), memberofdomainusage(A,E).
+(r39) verbgroup(A,B) :- alsosee(B,E), alsosee(F,C), memberofdomainregion(D,A), alsosee(C,D).
+(r40) verbgroup(A,B) :- memberofdomainregion(A,B), derivationallyrelatedform(B,A), similarto(A,C).
+(r41) verbgroup(A,B) :- derivationallyrelatedform(A,D), derivationallyrelatedform(B,A), synsetdomaintopicof(C,A), similarto(B,C).
+(r42) verbgroup(A,B) :- inv1(D,B,B,C,B,C), memberofdomainusage(D,E), membermeronym(B,A).
+(r43) verbgroup(A,B) :- similarto(A,E), memberofdomainregion(E,F), haspart(D,A), similarto(B,C).
+(r44) verbgroup(A,B) :- inv1(F,B,B,C,B,C), synsetdomaintopicof(D,B), memberofdomainusage(E,A).
+(r45) verbgroup(A,B) :- membermeronym(C,A), alsosee(C,B), instancehypernym(D,C).
+(r46) verbgroup(A,B) :- instancehypernym(A,D), haspart(D,C), haspart(D,A), similarto(B,C).
+(r47) verbgroup(A,B) :- inv1(B,D,B,C,B,C), memberofdomainusage(A,E), synsetdomaintopicof(D,B).
+(r48) verbgroup(A,B) :- alsosee(E,B), memberofdomainusage(D,C), alsosee(A,C).
+(r49) verbgroup(A,B) :- inv1(D,C,B,C,B,C), derivationallyrelatedform(A,E), haspart(D,C).
+(r50) verbgroup(A,B) :- inv2(F,C,D,A,C,A,C,A), synsetdomaintopicof(E,B).
+(r51) verbgroup(A,B) :- inv2(F,C,F,A,C,E,C,E), instancehypernym(B,D).
+(r52) verbgroup(A,B) :- alsosee(C,A), membermeronym(B,E), alsosee(F,C), instancehypernym(C,D).
+(r53) verbgroup(A,B) :- inv1(E,B,D,B,B,C), memberofdomainusage(B,A).
+(r54) verbgroup(A,B) :- membermeronym(C,A), memberofdomainusage(D,B), alsosee(F,C), instancehypernym(F,E).
+(r55) verbgroup(A,B) :- inv1(F,C,F,B,F,B), alsosee(C,D), synsetdomaintopicof(A,E).
+(r56) verbgroup(A,B) :- inv2(F,C,F,C,E,B,A,D), derivationallyrelatedform(F,B).
+(r57) verbgroup(A,B) :- memberofdomainregion(C,B), derivationallyrelatedform(C,A), memberofdomainusage(A,B).
+(r58) verbgroup(A,B) :- inv1(D,B,B,C,B,C), inv2(D,B,D,B,A,B,A,B), synsetdomaintopicof(B,C).
+(r59) verbgroup(A,B) :- inv2(B,A,B,A,A,B,A,B), haspart(C,A).
+(r60) verbgroup(A,B) :- inv1(A,F,B,C,B,C), synsetdomaintopicof(F,E), memberofdomainregion(A,D).
+(r61) verbgroup(A,B) :- memberofdomainregion(D,B), instancehypernym(E,B), hypernym(A,C).
+(r62) verbgroup(A,B) :- similarto(D,A), memberofdomainusage(D,F), similarto(A,E), similarto(B,C).
+(r63) verbgroup(A,B) :- haspart(B,C), memberofdomainregion(B,A), derivationallyrelatedform(D,C).
+(r64) verbgroup(A,B) :- inv1(A,D,B,C,A,E), inv2(A,D,A,D,A,D,A,D).
+(r65) verbgroup(A,B) :- synsetdomaintopicof(E,A), haspart(E,F), similarto(B,C), haspart(A,D).
+(r66) verbgroup(A,B) :- memberofdomainusage(A,D), membermeronym(B,C), similarto(E,D).
+(r67) verbgroup(A,B) :- memberofdomainregion(D,B), memberofdomainusage(D,C), memberofdomainusage(D,A).
+(r68) verbgroup(A,B) :- membermeronym(B,C), hypernym(C,A), similarto(B,C), memberofdomainregion(A,D).
+(r69) verbgroup(A,B) :- haspart(A,B), memberofdomainusage(A,D), similarto(B,C).
+(r70) verbgroup(A,B) :- haspart(D,C), synsetdomaintopicof(D,B), memberofdomainregion(A,D).
+(r71) verbgroup(A,B) :- synsetdomaintopicof(E,D), haspart(D,C), derivationallyrelatedform(A,E), similarto(B,C).
+(r72) verbgroup(A,B) :- inv2(F,C,D,F,C,B,C,B), derivationallyrelatedform(E,A).
+(r73) verbgroup(A,B) :- synsetdomaintopicof(F,A), membermeronym(D,B), alsosee(F,C), haspart(C,E).
+(r74) verbgroup(A,B) :- hypernym(A,E), hypernym(D,F), similarto(B,C), derivationallyrelatedform(B,F).
+(r75) verbgroup(A,B) :- inv1(C,A,A,B,A,B), derivationallyrelatedform(A,B).
+(r76) verbgroup(A,B) :- haspart(D,F), alsosee(F,C), derivationallyrelatedform(E,B), memberofdomainregion(A,D).
+(r77) verbgroup(A,B) :- inv1(A,D,B,C,B,C), derivationallyrelatedform(C,E), memberofdomainregion(E,F).
+(r78) verbgroup(A,B) :- memberofdomainusage(A,C), instancehypernym(D,B), memberofdomainusage(C,B).
+(r79) verbgroup(A,B) :- memberofdomainregion(D,F), instancehypernym(D,B), similarto(A,E), similarto(B,C).
+(r80) verbgroup(A,B) :- inv1(E,D,B,C,B,C), inv2(E,D,E,D,B,C,A,D).
+====================

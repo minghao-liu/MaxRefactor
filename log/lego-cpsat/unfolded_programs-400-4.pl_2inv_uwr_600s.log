@@ -1,0 +1,109 @@
+number of rules: 50
+program size: 379
+(r1) p27(A,B) :- place1(A,C), place1(C,B).
+(r2) p32(A,B) :- right(A,C), place1(C,B).
+(r3) p210(A,B) :- place1(A,C), p222(C,B).
+(r4) p0(A,B) :- right(A,C0_0), place1(C0_0,C), right(C,C1_0), place1(C1_0,B).
+(r5) p6(A,B) :- place1(A,C0_0), place1(C0_0,C), right(C,C1_0), place1(C1_0,B).
+(r6) p29(A,B) :- place1(A,C), right(C,C1_0), right(C1_0,C2_0), place1(C2_0,B).
+(r7) p135(A,B) :- right(A,C0_0), place1(C0_0,C), place1(C,C1_0), place1(C1_0,B).
+(r8) p282(A,B) :- right(A,C), right(C,C1_0), place1(C1_0,C2_0), place1(C2_0,B).
+(r9) p143(A,B) :- place1(A,C), p222(C,C1_0), place1(C1_0,C2_0), place1(C2_0,B).
+(r10) p221(A,B) :- place1(A,C0_0), place1(C0_0,C1_0), place1(C1_0,C), p222(C,B).
+(r11) p281(A,B) :- right(A,C0_0), place1(C0_0,C1_0), place1(C1_0,C), p222(C,B).
+(r12) p2(A,B) :- right(A,C0_0), place1(C0_0,C1_0-1), place1(C1_0-1,C), right(C,C1_0), place1(C1_0,C3_0), place1(C3_0,B).
+(r13) p137(A,B) :- place1(A,C0_0), place1(C0_0,C), right(C,C2_0), place1(C2_0,C1_0), place1(C1_0,C3_0), place1(C3_0,B).
+(r14) p4(A,B) :- place1(A,C), place1(C,C1_0-1), place1(C1_0-1,C1_0), right(C1_0,C2_0), right(C2_0,C4_0), place1(C4_0,B).
+(r15) p120(A,B) :- place1(A,C0_0-1), place1(C0_0-1,C0_0), right(C0_0,C1_0), place1(C1_0,C3_0), place1(C3_0,C), p222(C,B).
+(r16) p220(A,B) :- place1(A,C0_0), right(C0_0,C1_0-1), right(C1_0-1,C2_0), place1(C2_0,C), right(C,C1_0), place1(C1_0,B).
+(r17) p335(A,B) :- right(A,C), place1(C,C1_0-1), place1(C1_0-1,C1_0), right(C1_0,C2_0), right(C2_0,C4_0), place1(C4_0,B).
+(r18) p5(A,B) :- place1(A,C0_0), place1(C0_0,C), right(C,C1_0), place1(C1_0,C3_0), place1(C3_0,B).
+(r19) p111(A,B) :- right(A,C), right(C,C1_0-1), place1(C1_0-1,C1_0), place1(C1_0,C2_0), place1(C2_0,B).
+(r20) p112(A,B) :- right(A,C), place1(C,C1_0-1), place1(C1_0-1,C1_0), right(C1_0,C2_0), place1(C2_0,B).
+(r21) p200(A,B) :- place1(A,C0_0), place1(C0_0,C), right(C,C1_0), right(C1_0,C3_0), place1(C3_0,B).
+(r22) p254(A,B) :- place1(A,C0_0-1), place1(C0_0-1,C0_0), right(C0_0,C1_0), place1(C1_0,C), p222(C,B).
+(r23) p9(A,B) :- place1(A,C), right(C,C1_0), place1(C1_0,B).
+(r24) p13(A,B) :- right(A,C), place1(C,C1_0), place1(C1_0,B).
+(r25) p42(A,B) :- place1(A,C), place1(C,C1_0), place1(C1_0,B).
+(r26) p54(A,B) :- place1(A,C0_0), place1(C0_0,C), p222(C,B).
+(r27) p60(A,B) :- right(A,C0_0-1), place1(C0_0-1,C0_0), place1(C0_0,C1_0-1), place1(C1_0-1,C), right(C,C2_0), place1(C2_0,C1_0), place1(C1_0,C3_0), place1(C3_0,B).
+(r28) p31(A,B) :- place1(A,C0_0), place1(C0_0,C), place1(C,C2_0), place1(C2_0,C1_0), right(C1_0,C4_0), place1(C4_0,C3_0), right(C3_0,C5_0), place1(C5_0,B).
+(r29) p39(A,B) :- place1(A,C), place1(C,C1_0-2), place1(C1_0-2,C1_0-1), right(C1_0-1,C3_0), place1(C3_0,C2_0), place1(C2_0,C4_0), place1(C4_0,C1_0), p222(C1_0,B).
+(r30) p40(A,B) :- place1(A,C0_0), place1(C0_0,C1_0-1), place1(C1_0-1,C), right(C,C1_0), right(C1_0,C4_0), place1(C4_0,C3_0), place1(C3_0,C5_0), place1(C5_0,B).
+(r31) p94(A,B) :- right(A,C), place1(C,C1_0-1), right(C1_0-1,C2_0-1), right(C2_0-1,C3_0), place1(C3_0,C1_0), place1(C1_0,C2_0), place1(C2_0,C4_0), place1(C4_0,B).
+(r32) p1(A,B) :- place1(A,C0_0), place1(C0_0,C1_0-2), place1(C1_0-2,C1_0-1), right(C1_0-1,C2_0-1), place1(C2_0-1,C), right(C,C3_0-1), place1(C3_0-1,C2_0), place1(C2_0,C4_0), place1(C4_0,C1_0), right(C1_0,C5_0), place1(C5_0,C3_0), place1(C3_0,C6_0), place1(C6_0,B).
+(r33) p333(A,B) :- right(A,C0_0-2), place1(C0_0-2,C0_0-1), place1(C0_0-1,C1_0-2), place1(C1_0-2,C0_0), right(C0_0,C2_0), place1(C2_0,C1_0-1), place1(C1_0-1,C3_0-1), place1(C3_0-1,C), place1(C,C1_0), right(C1_0,C5_0), place1(C5_0,C3_0), place1(C3_0,C6_0), place1(C6_0,B).
+(r34) p8(A,B) :- place1(A,C0_0), place1(C0_0,C), right(C,C1_0), place1(C1_0,C3_0-1), place1(C3_0-1,C3_0), right(C3_0,C4_0), place1(C4_0,B).
+(r35) p73(A,B) :- place1(A,C0_0), right(C0_0,C1_0-1), place1(C1_0-1,C), place1(C,C1_0), right(C1_0,C3_0), right(C3_0,C5_0), place1(C5_0,B).
+(r36) p109(A,B) :- right(A,C), place1(C,C1_0-1), place1(C1_0-1,C1_0), right(C1_0,C3_0), place1(C3_0,C2_0), place1(C2_0,C4_0), place1(C4_0,B).
+(r37) p17(A,B) :- place1(A,C), place1(C,C1_0-2), place1(C1_0-2,C1_0-1), right(C1_0-1,C2_0-1), right(C2_0-1,C4_0-1), place1(C4_0-1,C1_0), place1(C1_0,C3_0), place1(C3_0,C2_0), right(C2_0,C4_0), place1(C4_0,B).
+(r38) p21(A,B) :- place1(A,C0_0), place1(C0_0,C), right(C,C2_0-1), place1(C2_0-1,C2_0), place1(C2_0,C3_0-1), place1(C3_0-1,C1_0), right(C1_0,C4_0), place1(C4_0,C3_0), place1(C3_0,C5_0), place1(C5_0,B).
+(r39) p77(A,B) :- right(A,C0_0), place1(C0_0,C), place1(C,C2_0), place1(C2_0,C3_0-1), place1(C3_0-1,C1_0), right(C1_0,C3_0), right(C3_0,C6_0), place1(C6_0,C5_0), place1(C5_0,C7_0), place1(C7_0,B).
+(r40) p84(A,B) :- right(A,C0_0), place1(C0_0,C), place1(C,C2_0), place1(C2_0,C3_0-2), place1(C3_0-2,C3_0-1), right(C3_0-1,C4_0), place1(C4_0,C1_0), right(C1_0,C3_0), place1(C3_0,C5_0), place1(C5_0,B).
+(r41) p18(A,B) :- place1(A,C), place1(C,C1_0-2), place1(C1_0-2,C1_0-1), right(C1_0-1,C2_0-1), place1(C2_0-1,C4_0-1), place1(C4_0-1,C1_0), place1(C1_0,C3_0), place1(C3_0,C2_0), right(C2_0,C7_0), place1(C7_0,C4_0), place1(C4_0,C8_0), place1(C8_0,B).
+(r42) p47(A,B) :- place1(A,C0_0), place1(C0_0,C), place1(C,C2_0-1), place1(C2_0-1,C2_0), right(C2_0,C4_0-1), place1(C4_0-1,C3_0-1), place1(C3_0-1,C5_0-1), place1(C5_0-1,C1_0), right(C1_0,C4_0), place1(C4_0,C7_0), place1(C7_0,C3_0), right(C3_0,C5_0), place1(C5_0,C9_0), place1(C9_0,B).
+(r43) p67(A,B) :- right(A,C0_0-1), place1(C0_0-1,C1_0-2), place1(C1_0-2,C0_0), right(C0_0,C1_0-1), place1(C1_0-1,C3_0-1), place1(C3_0-1,C), place1(C,C2_0), place1(C2_0,C1_0), right(C1_0,C3_0), place1(C3_0,C7_0), place1(C7_0,B).
+(r44) p164(A,B) :- place1(A,C0_0), place1(C0_0,C1_0-2), place1(C1_0-2,C1_0-1), right(C1_0-1,C2_0-1), place1(C2_0-1,C), place1(C,C2_0), place1(C2_0,C1_0), right(C1_0,C5_0), place1(C5_0,C3_0), place1(C3_0,C6_0), place1(C6_0,B).
+(r45) p215(A,B) :- place1(A,C), place1(C,C1_0-2), place1(C1_0-2,C1_0-1), right(C1_0-1,C2_0-1), place1(C2_0-1,C4_0-1), place1(C4_0-1,C1_0), right(C1_0,C2_0), right(C2_0,C6_0), place1(C6_0,C4_0), place1(C4_0,C7_0), place1(C7_0,B).
+(r46) p80(A,B) :- place1(A,C0_0), place1(C0_0,C1_0-2), place1(C1_0-2,C1_0-1), right(C1_0-1,C2_0-1), place1(C2_0-1,C), right(C,C2_0), place1(C2_0,C1_0), place1(C1_0,C3_0), place1(C3_0,B).
+(r47) p110(A,B) :- place1(A,C0_0), right(C0_0,C1_0-1), right(C1_0-1,C2_0), place1(C2_0,C), place1(C,C1_0), right(C1_0,C4_0), place1(C4_0,C3_0), place1(C3_0,C5_0), place1(C5_0,B).
+(r48) p140(A,B) :- right(A,C), right(C,C1_0-2), place1(C1_0-2,C1_0-1), place1(C1_0-1,C2_0-1), place1(C2_0-1,C1_0), right(C1_0,C3_0), place1(C3_0,C2_0), place1(C2_0,C4_0), place1(C4_0,B).
+(r49) p222(A,B) :- at_end(A), place1(A,C1_0), place1(C1_0,B).
+(r50) p222(A,B) :- right(A,C), p222(C,B).
+====================
+CP-SAT solving...
+number of rules: 52
+program size: 135
+(inv0) inv0() :- .
+(inv1) inv1(X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,X13,X14,X15,X16,X17,X18,X19,X20,X21,X22,X23,X24,X25,X26) :- right(X1,X2), right(X3,X4), right(X5,X6), place1(X7,X8), place1(X9,X10), place1(X11,X12), place1(X13,X14), place1(X15,X16), place1(X17,X18), place1(X19,X20), place1(X21,X22), place1(X23,X24), place1(X25,X26).
+(r1) p27(A,B) :- place1(A,C), place1(C,B).
+(r2) p32(A,B) :- inv1(A,C,A,C,A,C,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B).
+(r3) p210(A,B) :- place1(A,C), p222(C,B).
+(r4) p0(A,B) :- inv1(A,C0_0,C,C1_0,A,C0_0,C0_0,C,C1_0,B,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C).
+(r5) p6(A,B) :- inv1(C,C1_0,C,C1_0,C,C1_0,A,C0_0,C0_0,C,C1_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r6) p29(A,B) :- inv1(C,C1_0,C1_0,C2_0,C,C1_0,A,C,C2_0,B,A,C,A,C,A,C,A,C,A,C,A,C,A,C,A,C).
+(r7) p135(A,B) :- inv1(A,C0_0,A,C0_0,A,C0_0,C0_0,C,C,C1_0,C1_0,B,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C,C0_0,C).
+(r8) p282(A,B) :- inv1(A,C,C,C1_0,A,C,C1_0,C2_0,C2_0,B,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0,C1_0,C2_0).
+(r9) p143(A,B) :- place1(A,C), p222(C,C1_0), place1(C1_0,C2_0), place1(C2_0,B).
+(r10) p221(A,B) :- place1(A,C0_0), place1(C0_0,C1_0), place1(C1_0,C), p222(C,B).
+(r11) p281(A,B) :- inv1(A,C0_0,A,C0_0,A,C0_0,C0_0,C1_0,C1_0,C,C0_0,C1_0,C0_0,C1_0,C0_0,C1_0,C0_0,C1_0,C0_0,C1_0,C0_0,C1_0,C0_0,C1_0,C0_0,C1_0), p222(C,B).
+(r12) p2(A,B) :- inv1(A,C0_0,C,C1_0,A,C0_0,C0_0,C1_0-1,C1_0-1,C,C1_0,C3_0,C3_0,B,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1,C0_0,C1_0-1).
+(r13) p137(A,B) :- inv1(C,C2_0,C,C2_0,C,C2_0,A,C0_0,C0_0,C,C2_0,C1_0,C1_0,C3_0,C3_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r14) p4(A,B) :- inv1(C1_0,C2_0,C2_0,C4_0,C1_0,C2_0,A,C,C,C1_0-1,C1_0-1,C1_0,C4_0,B,A,C,A,C,A,C,A,C,A,C,A,C).
+(r15) p120(A,B) :- inv1(C0_0,C1_0,C0_0,C1_0,C0_0,C1_0,A,C0_0-1,C0_0-1,C0_0,C1_0,C3_0,C3_0,C,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1), p222(C,B).
+(r16) p220(A,B) :- inv1(C0_0,C1_0-1,C1_0-1,C2_0,C,C1_0,A,C0_0,C2_0,C,C1_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r17) p335(A,B) :- inv1(A,C,C1_0,C2_0,C2_0,C4_0,C,C1_0-1,C1_0-1,C1_0,C4_0,B,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1).
+(r18) p5(A,B) :- inv1(C,C1_0,C,C1_0,C,C1_0,A,C0_0,C0_0,C,C1_0,C3_0,C3_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r19) p111(A,B) :- inv1(A,C,C,C1_0-1,A,C,C1_0-1,C1_0,C1_0,C2_0,C2_0,B,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0,C1_0-1,C1_0).
+(r20) p112(A,B) :- inv1(A,C,C1_0,C2_0,A,C,C,C1_0-1,C1_0-1,C1_0,C2_0,B,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1).
+(r21) p200(A,B) :- inv1(C,C1_0,C1_0,C3_0,C,C1_0,A,C0_0,C0_0,C,C3_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r22) p254(A,B) :- inv1(C0_0,C1_0,C0_0,C1_0,C0_0,C1_0,A,C0_0-1,C0_0-1,C0_0,C1_0,C,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1,A,C0_0-1), p222(C,B).
+(r23) p9(A,B) :- inv1(C,C1_0,C,C1_0,C,C1_0,A,C,C1_0,B,A,C,A,C,A,C,A,C,A,C,A,C,A,C,A,C).
+(r24) p13(A,B) :- inv1(A,C,A,C,A,C,C,C1_0,C1_0,B,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0,C,C1_0).
+(r25) p42(A,B) :- place1(A,C), place1(C,C1_0), place1(C1_0,B).
+(r26) p54(A,B) :- place1(A,C0_0), place1(C0_0,C), p222(C,B).
+(r27) p60(A,B) :- inv1(A,C0_0-1,C,C2_0,A,C0_0-1,C0_0-1,C0_0,C0_0,C1_0-1,C1_0-1,C,C2_0,C1_0,C1_0,C3_0,C3_0,B,C0_0-1,C0_0,C0_0-1,C0_0,C0_0-1,C0_0,C0_0-1,C0_0).
+(r28) p31(A,B) :- inv1(C1_0,C4_0,C3_0,C5_0,C1_0,C4_0,A,C0_0,C0_0,C,C,C2_0,C2_0,C1_0,C4_0,C3_0,C5_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r29) p39(A,B) :- inv1(C1_0-1,C3_0,C1_0-1,C3_0,C1_0-1,C3_0,A,C,C,C1_0-2,C1_0-2,C1_0-1,C3_0,C2_0,C2_0,C4_0,C4_0,C1_0,A,C,A,C,A,C,A,C), p222(C1_0,B).
+(r30) p40(A,B) :- inv1(C,C1_0,C1_0,C4_0,C,C1_0,A,C0_0,C0_0,C1_0-1,C1_0-1,C,C4_0,C3_0,C3_0,C5_0,C5_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r31) p94(A,B) :- inv1(A,C,C1_0-1,C2_0-1,C2_0-1,C3_0,C,C1_0-1,C3_0,C1_0,C1_0,C2_0,C2_0,C4_0,C4_0,B,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1).
+(r32) p1(A,B) :- inv1(C1_0-1,C2_0-1,C,C3_0-1,C1_0,C5_0,A,C0_0,C0_0,C1_0-2,C1_0-2,C1_0-1,C2_0-1,C,C3_0-1,C2_0,C2_0,C4_0,C4_0,C1_0,C5_0,C3_0,C3_0,C6_0,C6_0,B).
+(r33) p333(A,B) :- inv1(A,C0_0-2,C0_0,C2_0,C1_0,C5_0,C0_0-2,C0_0-1,C0_0-1,C1_0-2,C1_0-2,C0_0,C2_0,C1_0-1,C1_0-1,C3_0-1,C3_0-1,C,C,C1_0,C5_0,C3_0,C3_0,C6_0,C6_0,B).
+(r34) p8(A,B) :- inv1(C,C1_0,C3_0,C4_0,C,C1_0,A,C0_0,C0_0,C,C1_0,C3_0-1,C3_0-1,C3_0,C4_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r35) p73(A,B) :- inv1(C0_0,C1_0-1,C1_0,C3_0,C3_0,C5_0,A,C0_0,C1_0-1,C,C,C1_0,C5_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r36) p109(A,B) :- inv1(A,C,C1_0,C3_0,A,C,C,C1_0-1,C1_0-1,C1_0,C3_0,C2_0,C2_0,C4_0,C4_0,B,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1,C,C1_0-1).
+(r37) p17(A,B) :- inv1(C1_0-1,C2_0-1,C2_0-1,C4_0-1,C2_0,C4_0,A,C,C,C1_0-2,C1_0-2,C1_0-1,C4_0-1,C1_0,C1_0,C3_0,C3_0,C2_0,C4_0,B,A,C,A,C,A,C).
+(r38) p21(A,B) :- inv1(C,C2_0-1,C1_0,C4_0,C,C2_0-1,A,C0_0,C0_0,C,C2_0-1,C2_0,C2_0,C3_0-1,C3_0-1,C1_0,C4_0,C3_0,C3_0,C5_0,C5_0,B,A,C0_0,A,C0_0).
+(r39) p77(A,B) :- inv1(A,C0_0,C1_0,C3_0,C3_0,C6_0,C0_0,C,C,C2_0,C2_0,C3_0-1,C3_0-1,C1_0,C6_0,C5_0,C5_0,C7_0,C7_0,B,C0_0,C,C0_0,C,C0_0,C).
+(r40) p84(A,B) :- inv1(A,C0_0,C3_0-1,C4_0,C1_0,C3_0,C0_0,C,C,C2_0,C2_0,C3_0-2,C3_0-2,C3_0-1,C4_0,C1_0,C3_0,C5_0,C5_0,B,C0_0,C,C0_0,C,C0_0,C).
+(r41) p18(A,B) :- inv1(C1_0-1,C2_0-1,C2_0,C7_0,C1_0-1,C2_0-1,A,C,C,C1_0-2,C1_0-2,C1_0-1,C2_0-1,C4_0-1,C4_0-1,C1_0,C1_0,C3_0,C3_0,C2_0,C7_0,C4_0,C4_0,C8_0,C8_0,B).
+(r42) p47(A,B) :- inv1(C2_0,C4_0-1,C1_0,C4_0,C3_0,C5_0,A,C0_0,C0_0,C,C,C2_0-1,C2_0-1,C2_0,C4_0-1,C3_0-1,C3_0-1,C5_0-1,C5_0-1,C1_0,C4_0,C7_0,C7_0,C3_0,C5_0,C9_0), inv1(C2_0,C4_0-1,C2_0,C4_0-1,C2_0,C4_0-1,C9_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r43) p67(A,B) :- inv1(A,C0_0-1,C0_0,C1_0-1,C1_0,C3_0,C0_0-1,C1_0-2,C1_0-2,C0_0,C1_0-1,C3_0-1,C3_0-1,C,C,C2_0,C2_0,C1_0,C3_0,C7_0,C7_0,B,C0_0-1,C1_0-2,C0_0-1,C1_0-2).
+(r44) p164(A,B) :- inv1(C1_0-1,C2_0-1,C1_0,C5_0,C1_0-1,C2_0-1,A,C0_0,C0_0,C1_0-2,C1_0-2,C1_0-1,C2_0-1,C,C,C2_0,C2_0,C1_0,C5_0,C3_0,C3_0,C6_0,C6_0,B,A,C0_0).
+(r45) p215(A,B) :- inv1(C1_0-1,C2_0-1,C1_0,C2_0,C2_0,C6_0,A,C,C,C1_0-2,C1_0-2,C1_0-1,C2_0-1,C4_0-1,C4_0-1,C1_0,C6_0,C4_0,C4_0,C7_0,C7_0,B,A,C,A,C).
+(r46) p80(A,B) :- inv1(C1_0-1,C2_0-1,C,C2_0,C1_0-1,C2_0-1,A,C0_0,C0_0,C1_0-2,C1_0-2,C1_0-1,C2_0-1,C,C2_0,C1_0,C1_0,C3_0,C3_0,B,A,C0_0,A,C0_0,A,C0_0).
+(r47) p110(A,B) :- inv1(C0_0,C1_0-1,C1_0-1,C2_0,C1_0,C4_0,A,C0_0,C2_0,C,C,C1_0,C4_0,C3_0,C3_0,C5_0,C5_0,B,A,C0_0,A,C0_0,A,C0_0,A,C0_0).
+(r48) p140(A,B) :- inv1(A,C,C,C1_0-2,C1_0,C3_0,C1_0-2,C1_0-1,C1_0-1,C2_0-1,C2_0-1,C1_0,C3_0,C2_0,C2_0,C4_0,C4_0,B,C1_0-2,C1_0-1,C1_0-2,C1_0-1,C1_0-2,C1_0-1,C1_0-2,C1_0-1).
+(r49) p222(A,B) :- at_end(A), place1(A,C1_0), place1(C1_0,B).
+(r50) p222(A,B) :- right(A,C), p222(C,B).
+====================

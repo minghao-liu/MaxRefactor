@@ -1,0 +1,289 @@
+number of rules: 140
+program size: 777
+(r1) interacts(A,B) :- transporterinducer(B,E), enzymesubstrate(B,D), transporter(F,A), targetinducer(A,C), transportersubstrate(B,F).
+(r2) interacts(A,B) :- enzymeinducer(A,E), transporterinhibitor(B,C), transportersubstrate(B,C), target(D,A), transporterinducer(A,C).
+(r3) interacts(A,B) :- transporterinhibitor(B,C), transportersubstrate(A,C), enzymeinducer(B,D), enzyme(D,A).
+(r4) interacts(A,B) :- targetinhibitor(A,D), enzymeinhibitor(A,F), transporterinducer(B,C), target(E,A).
+(r5) interacts(A,B) :- targetantagonist(B,F), enzyme(C,B), transporter(D,A), targetantagonist(B,E).
+(r6) interacts(A,B) :- targetagonist(A,F), enzymesubstrate(A,E), targetinducer(A,C), enzymesubstrate(B,D).
+(r7) interacts(A,B) :- targetinducer(B,C), targetagonist(B,C), transporter(D,A), targetantagonist(A,E).
+(r8) interacts(A,B) :- target(D,B), target(C,B), targetantagonist(A,D), targetinducer(A,C).
+(r9) interacts(A,B) :- enzymesubstrate(A,E), targetagonist(A,D), target(C,B), targetantagonist(A,D).
+(r10) interacts(A,B) :- enzyme(C,A), enzymesubstrate(B,C), transporter(F,B), enzymesubstrate(B,D), enzymesubstrate(B,E).
+(r11) interacts(A,B) :- transportersubstrate(A,D), enzyme(C,B), transporterinducer(A,E), enzymeinducer(B,F).
+(r12) interacts(A,B) :- targetinducer(A,E), targetantagonist(B,E), target(D,A), target(F,B), targetinducer(A,C).
+(r13) interacts(A,B) :- target(D,A), targetantagonist(B,E), transportersubstrate(A,C), transporterinducer(A,C), targetinhibitor(B,D).
+(r14) interacts(A,B) :- target(C,A), enzyme(F,B), transporterinhibitor(B,D), enzymeinhibitor(B,E).
+(r15) interacts(A,B) :- enzymesubstrate(B,E), transporterinhibitor(A,C), enzymesubstrate(B,D), enzymeinhibitor(B,E).
+(r16) interacts(A,B) :- transporter(F,A), transportersubstrate(B,E), transporter(C,A), targetinhibitor(B,D).
+(r17) interacts(A,B) :- enzymeinducer(A,E), enzymeinhibitor(A,F), transporter(D,B), transportersubstrate(A,C).
+(r18) interacts(A,B) :- targetantagonist(A,C), targetantagonist(B,E), targetinducer(B,C), targetinducer(B,D), target(D,B).
+(r19) interacts(A,B) :- targetantagonist(B,E), targetinhibitor(B,D), target(E,B), enzyme(F,A), targetagonist(A,C).
+(r20) interacts(A,B) :- targetagonist(B,D), transporter(C,B), transporter(C,A), enzymeinhibitor(A,E).
+(r21) interacts(A,B) :- targetinducer(A,E), targetagonist(A,D), targetinhibitor(B,F), targetagonist(A,C).
+(r22) interacts(A,B) :- transporter(C,B), enzymesubstrate(B,D), transporter(F,A), enzymesubstrate(A,E), enzymeinhibitor(A,E).
+(r23) interacts(A,B) :- transporterinhibitor(A,C), enzymeinhibitor(B,F), targetinhibitor(A,E), enzymeinducer(A,D).
+(r24) interacts(A,B) :- targetagonist(A,D), targetinducer(B,F), transporter(C,A), targetantagonist(B,E), targetantagonist(B,F).
+(r25) interacts(A,B) :- enzymesubstrate(B,D), targetantagonist(B,E), targetantagonist(A,E), transportersubstrate(B,C), enzymeinducer(B,F).
+(r26) interacts(A,B) :- targetagonist(B,D), targetinhibitor(B,E), target(C,B), enzyme(F,A).
+(r27) interacts(A,B) :- transporterinhibitor(A,C), transportersubstrate(B,C), targetinducer(A,D), transportersubstrate(A,C).
+(r28) interacts(A,B) :- enzyme(C,A), enzymeinducer(B,E), enzyme(D,B), transporter(F,B).
+(r29) interacts(A,B) :- enzymeinducer(B,E), targetagonist(A,D), target(D,A), targetantagonist(A,F), target(C,B).
+(r30) interacts(A,B) :- target(D,A), enzymeinducer(B,E), transporterinhibitor(B,C), transporterinducer(B,F), targetinducer(B,D).
+(r31) interacts(A,B) :- targetagonist(A,D), targetagonist(B,E), targetantagonist(B,E), transportersubstrate(A,C).
+(r32) interacts(A,B) :- target(E,A), target(D,A), target(C,A), target(D,B), targetinducer(A,D).
+(r33) interacts(A,B) :- enzyme(E,B), transporterinhibitor(B,C), target(D,A), enzymeinducer(B,F), enzymeinhibitor(A,E).
+(r34) interacts(A,B) :- targetinhibitor(A,D), enzymeinducer(B,C), targetinhibitor(B,D), target(D,A).
+(r35) interacts(A,B) :- enzymeinducer(B,E), enzyme(D,B), targetantagonist(A,F), targetinhibitor(A,C).
+(r36) interacts(A,B) :- targetagonist(A,D), targetagonist(B,E), target(D,A), transporter(F,A), transporterinducer(A,C).
+(r37) interacts(A,B) :- targetantagonist(B,C), transporterinhibitor(B,E), targetinducer(B,F), transporterinhibitor(A,D).
+(r38) interacts(A,B) :- target(D,A), targetinhibitor(A,D), targetinducer(B,C), targetinhibitor(A,E), targetagonist(B,C).
+(r39) interacts(A,B) :- targetantagonist(B,C), targetinducer(A,C), enzymeinhibitor(B,D), transporter(E,B).
+(r40) interacts(A,B) :- enzymesubstrate(B,C), transporter(D,B), transporterinducer(A,D), target(E,A).
+(r41) interacts(A,B) :- transporterinhibitor(A,C), enzymeinhibitor(B,D), transporterinducer(B,E), enzymeinducer(A,F).
+(r42) interacts(A,B) :- transportersubstrate(A,F), enzyme(D,B), enzyme(E,A), targetagonist(A,C).
+(r43) interacts(A,B) :- transportersubstrate(A,F), transporter(C,B), transporterinducer(B,E), transporter(D,A).
+(r44) interacts(A,B) :- targetinducer(B,E), targetantagonist(A,D), target(D,A), transporterinhibitor(A,F), targetagonist(B,C).
+(r45) interacts(A,B) :- transporterinhibitor(A,E), targetinducer(A,C), transporterinducer(B,E), enzymesubstrate(B,D).
+(r46) interacts(A,B) :- enzymesubstrate(B,D), enzymesubstrate(A,D), transportersubstrate(A,C), transporter(F,A), enzymeinhibitor(A,E).
+(r47) interacts(A,B) :- enzymeinducer(A,D), enzymesubstrate(B,D), targetinducer(A,C), target(C,B), transportersubstrate(B,E).
+(r48) interacts(A,B) :- enzyme(D,B), enzymesubstrate(B,D), enzymeinducer(A,C), transporter(E,A).
+(r49) interacts(A,B) :- transportersubstrate(A,F), transporter(D,A), targetantagonist(B,E), transportersubstrate(B,D), targetagonist(A,C).
+(r50) interacts(A,B) :- transporterinhibitor(A,C), transporter(E,B), target(D,A), enzymesubstrate(A,F), enzymeinducer(B,F).
+(r51) interacts(A,B) :- enzymeinducer(A,E), transporterinducer(A,C), transporterinducer(B,D), transporter(D,A).
+(r52) interacts(A,B) :- transportersubstrate(B,D), targetinducer(A,C), transporterinducer(B,E), targetinhibitor(A,F).
+(r53) interacts(A,B) :- transporterinhibitor(B,D), enzymesubstrate(A,F), targetantagonist(A,C), enzyme(E,A).
+(r54) interacts(A,B) :- enzymeinducer(B,E), target(D,A), transporter(F,A), transporterinducer(A,C), targetinhibitor(B,D).
+(r55) interacts(A,B) :- target(D,A), transporterinhibitor(B,C), transportersubstrate(A,C), transportersubstrate(B,E), targetinhibitor(A,F).
+(r56) interacts(A,B) :- targetinhibitor(A,D), targetinducer(A,C), target(C,B), targetinducer(B,C).
+(r57) interacts(A,B) :- targetinhibitor(B,E), transporter(C,A), targetinducer(B,D), target(D,A).
+(r58) interacts(A,B) :- targetinducer(A,F), transporter(C,A), targetantagonist(B,E), transporterinducer(A,C), transporterinducer(A,D).
+(r59) interacts(A,B) :- transporterinhibitor(B,F), enzymeinhibitor(B,D), transporterinducer(A,E), transportersubstrate(A,C).
+(r60) interacts(A,B) :- targetagonist(B,D), target(D,A), targetinhibitor(B,E), target(C,B), targetinducer(A,C).
+(r61) interacts(A,B) :- targetinhibitor(A,D), enzymesubstrate(A,C), transporterinducer(B,E), target(F,A).
+(r62) interacts(A,B) :- enzymeinhibitor(B,C), enzyme(E,B), transportersubstrate(A,D).
+(r63) interacts(A,B) :- enzymesubstrate(A,C), enzymesubstrate(B,D), enzymeinducer(A,C), transporterinducer(A,E), enzymeinhibitor(B,D).
+(r64) interacts(A,B) :- transporterinhibitor(A,C), transporterinducer(B,E), targetantagonist(B,D), target(D,A), transporterinhibitor(B,F).
+(r65) interacts(A,B) :- enzymesubstrate(B,C), transporterinducer(B,E), transporter(F,B), target(D,A), transporter(F,A).
+(r66) interacts(A,B) :- targetinducer(A,E), transporterinducer(A,F), enzymesubstrate(A,D), enzymeinducer(B,C).
+(r67) interacts(A,B) :- targetantagonist(B,D), targetagonist(A,E), transporter(F,B), targetantagonist(B,E), enzymeinhibitor(A,C).
+(r68) interacts(A,B) :- enzymesubstrate(B,E), transporterinhibitor(B,C), enzymeinhibitor(B,E), target(D,A).
+(r69) interacts(A,B) :- targetinducer(A,E), enzyme(C,B), enzymesubstrate(B,D), enzymeinhibitor(A,C), targetinhibitor(A,E).
+(r70) interacts(A,B) :- targetagonist(B,D), target(D,A), enzymeinhibitor(B,C), transporterinhibitor(A,E), enzyme(F,A).
+(r71) interacts(A,B) :- targetagonist(A,D), transportersubstrate(B,C), transporterinducer(B,F), targetantagonist(B,E), target(E,B).
+(r72) interacts(A,B) :- targetinhibitor(A,C), targetantagonist(B,E), target(D,B), targetagonist(B,C), targetagonist(A,C).
+(r73) interacts(A,B) :- transporterinhibitor(A,E), targetantagonist(A,D), transporter(F,B), targetinhibitor(B,C).
+(r74) interacts(A,B) :- target(D,A), targetagonist(A,E), targetantagonist(A,E), transporterinducer(B,C), transporterinhibitor(B,F).
+(r75) interacts(A,B) :- enzyme(C,B), enzymeinhibitor(A,D), transportersubstrate(B,E), enzymeinducer(B,C).
+(r76) interacts(A,B) :- targetantagonist(B,C), transporterinducer(A,E), enzyme(F,A), targetinducer(A,D).
+(r77) interacts(A,B) :- enzyme(D,B), targetantagonist(B,E), transporter(F,A), transporterinducer(B,C), transporterinhibitor(B,F).
+(r78) interacts(A,B) :- target(E,B), transporterinducer(B,C), transporterinducer(A,D), transporterinducer(B,D).
+(r79) interacts(A,B) :- enzymesubstrate(A,C), enzyme(C,B), targetagonist(B,E), target(E,A), enzymesubstrate(B,D).
+(r80) interacts(A,B) :- enzymesubstrate(B,C), transporter(E,B), enzymesubstrate(B,D), enzymesubstrate(A,D), enzymeinhibitor(A,D).
+(r81) interacts(A,B) :- targetinducer(B,E), targetinhibitor(B,C), targetinhibitor(A,C), enzymesubstrate(A,D), targetantagonist(B,E).
+(r82) interacts(A,B) :- target(C,A), targetinducer(B,C), targetagonist(B,E), enzyme(D,A).
+(r83) interacts(A,B) :- transporter(F,A), transporterinducer(A,C), targetantagonist(A,D), enzymesubstrate(B,E).
+(r84) interacts(A,B) :- transporterinducer(A,C), transportersubstrate(A,D), transporterinducer(B,C), targetantagonist(A,E).
+(r85) interacts(A,B) :- transporterinhibitor(A,C), transportersubstrate(B,C), targetantagonist(B,E), targetinhibitor(A,D), targetantagonist(B,F).
+(r86) interacts(A,B) :- targetinducer(A,F), enzymeinducer(A,C), target(D,A), enzymeinhibitor(B,C), enzymesubstrate(B,E).
+(r87) interacts(A,B) :- enzyme(D,B), targetinhibitor(A,C), targetantagonist(B,E), targetagonist(A,C), enzyme(D,A).
+(r88) interacts(A,B) :- enzymesubstrate(A,D), targetantagonist(A,E), targetantagonist(B,E), transportersubstrate(B,C), transporterinhibitor(B,F).
+(r89) interacts(A,B) :- targetinhibitor(B,C), target(D,A), target(C,A), transportersubstrate(B,E), targetagonist(A,C).
+(r90) interacts(A,B) :- target(D,A), targetinducer(A,E), enzymeinducer(A,C), target(E,A), transporterinhibitor(B,F).
+(r91) interacts(A,B) :- targetantagonist(B,C), targetantagonist(B,E), transportersubstrate(B,D), target(C,B), targetagonist(A,C).
+(r92) interacts(A,B) :- enzyme(E,B), transporter(C,B), targetinducer(B,F), target(D,A), targetinhibitor(B,D).
+(r93) interacts(A,B) :- enzyme(E,B), enzymeinducer(B,E), targetinducer(A,F), target(D,A), targetantagonist(A,C).
+(r94) interacts(A,B) :- enzyme(C,B), targetantagonist(B,E), transporterinducer(B,F), transporterinducer(A,F), targetinducer(A,D).
+(r95) interacts(A,B) :- targetinducer(A,E), target(D,B), targetinhibitor(B,E), targetinducer(B,C).
+(r96) interacts(A,B) :- transporterinhibitor(B,F), targetinhibitor(A,C), enzymeinhibitor(B,E), targetinhibitor(B,D).
+(r97) interacts(A,B) :- targetinducer(A,E), transporterinhibitor(B,C), transporterinhibitor(B,D), targetantagonist(B,E), transporterinducer(B,F).
+(r98) interacts(A,B) :- enzymeinducer(B,E), targetinducer(B,C), transporterinducer(B,D), enzyme(F,A).
+(r99) interacts(A,B) :- enzymesubstrate(B,D), targetantagonist(B,F), targetinhibitor(B,E), targetantagonist(A,C), enzyme(D,A).
+(r100) interacts(A,B) :- enzymeinhibitor(B,D), targetantagonist(B,E), targetantagonist(A,E), target(F,B), target(C,B).
+(r101) interacts(A,B) :- enzyme(C,A), enzyme(E,B), enzymesubstrate(B,D), enzymesubstrate(A,D), enzymeinhibitor(B,C).
+(r102) interacts(A,B) :- enzyme(D,B), transporterinducer(B,E), enzymesubstrate(B,D), enzymeinducer(A,C), transporter(E,A).
+(r103) interacts(A,B) :- transportersubstrate(B,E), targetinhibitor(B,C), targetantagonist(A,C), targetinducer(B,D).
+(r104) interacts(A,B) :- targetantagonist(A,D), enzymeinducer(A,C), target(D,A), targetantagonist(B,F), transportersubstrate(B,E).
+(r105) interacts(A,B) :- enzymeinducer(B,F), targetinducer(A,E), transporter(D,A), targetagonist(A,C).
+(r106) interacts(A,B) :- transporterinducer(B,D), transporter(F,B), targetantagonist(B,E), transportersubstrate(B,D), targetantagonist(A,C).
+(r107) interacts(A,B) :- targetantagonist(B,E), enzymeinducer(B,C), enzymeinhibitor(B,D), enzymeinducer(B,F), enzyme(D,A).
+(r108) interacts(A,B) :- enzymeinducer(B,E), transporterinhibitor(B,C), transporterinducer(B,D), targetinhibitor(A,F).
+(r109) interacts(A,B) :- targetagonist(B,D), target(D,A), enzymesubstrate(A,E), transporterinducer(A,C), targetinducer(A,D).
+(r110) interacts(A,B) :- target(C,A), target(E,B), enzymesubstrate(B,D), enzymesubstrate(A,D).
+(r111) interacts(A,B) :- transportersubstrate(B,D), target(E,B), targetinhibitor(B,C), enzyme(F,A).
+(r112) interacts(A,B) :- enzyme(D,B), targetinhibitor(A,C), target(F,A), targetantagonist(A,E), enzymesubstrate(B,D).
+(r113) interacts(A,B) :- transportersubstrate(A,E), transportersubstrate(B,D), transporter(C,A), targetagonist(B,F).
+(r114) interacts(A,B) :- transportersubstrate(A,F), targetantagonist(B,D), targetantagonist(B,E), transporterinducer(A,C), targetinhibitor(B,E).
+(r115) interacts(A,B) :- targetantagonist(B,E), transportersubstrate(A,C), target(E,B), enzymeinhibitor(A,D), targetinhibitor(A,F).
+(r116) interacts(A,B) :- enzymeinhibitor(A,F), enzyme(F,B), transporterinducer(B,E), target(D,A), target(C,A).
+(r117) interacts(A,B) :- transportersubstrate(B,E), target(F,A), transporter(C,A), transporterinhibitor(A,D).
+(r118) interacts(A,B) :- enzymesubstrate(B,C), enzyme(C,B), target(D,A), transporter(F,A), enzymeinhibitor(A,E).
+(r119) interacts(A,B) :- enzymesubstrate(B,D), transportersubstrate(A,C), targetinhibitor(A,E), transporterinducer(B,F), enzyme(D,A).
+(r120) interacts(A,B) :- targetagonist(A,E), targetantagonist(B,E), enzymeinducer(B,C), transporterinducer(A,D), transportersubstrate(B,F).
+(r121) interacts(A,B) :- transporterinhibitor(B,D), transporter(F,B), transporter(D,A), targetantagonist(B,E), transporterinducer(A,C).
+(r122) interacts(A,B) :- transporterinducer(B,C), targetantagonist(B,D), transporter(C,A), transporterinducer(A,E).
+(r123) interacts(A,B) :- targetinducer(A,C), targetantagonist(B,D), enzyme(E,A), transporterinducer(B,F).
+(r124) interacts(A,B) :- enzymeinhibitor(B,C), target(E,B), targetinducer(A,D), targetinhibitor(B,D).
+(r125) interacts(A,B) :- enzymeinhibitor(A,F), targetantagonist(B,E), target(D,A), transporterinducer(B,C), targetinducer(B,D).
+(r126) interacts(A,B) :- enzymeinhibitor(B,C), transporterinhibitor(B,D), targetinducer(B,E), enzymeinducer(A,F).
+(r127) interacts(A,B) :- target(D,A), transporter(F,B), transportersubstrate(A,C), transporterinducer(A,F), transportersubstrate(B,E).
+(r128) interacts(A,B) :- target(C,A), transporterinducer(A,F), enzymesubstrate(B,E), target(D,A).
+(r129) interacts(A,B) :- enzyme(D,B), targetagonist(B,E), targetantagonist(B,E), transporterinducer(B,C), transporterinducer(A,F).
+(r130) interacts(A,B) :- transporter(C,B), targetantagonist(A,F), targetantagonist(B,E), targetantagonist(A,E), transportersubstrate(A,D).
+(r131) interacts(A,B) :- targetinducer(B,E), transporter(C,B), enzymeinducer(B,F), target(D,A).
+(r132) interacts(A,B) :- targetagonist(B,F), enzymesubstrate(B,C), targetagonist(A,E), enzymeinducer(A,C), enzymesubstrate(B,D).
+(r133) interacts(A,B) :- target(D,A), targetinducer(A,F), transporter(E,B), transporter(C,A), transporter(E,A).
+(r134) interacts(A,B) :- enzymeinducer(B,E), enzymeinducer(A,D), enzymeinducer(B,D), enzymesubstrate(B,D), targetinhibitor(B,C).
+(r135) interacts(A,B) :- target(D,A), target(E,A), transportersubstrate(A,C), transportersubstrate(B,C), transportersubstrate(B,F).
+(r136) interacts(A,B) :- targetantagonist(B,C), targetantagonist(A,D), targetagonist(B,E), target(D,A), enzymesubstrate(A,F).
+(r137) interacts(A,B) :- transporter(F,B), transportersubstrate(B,C), target(D,A), targetinhibitor(B,E), targetinducer(A,D).
+(r138) interacts(A,B) :- targetinhibitor(A,C), target(D,A), targetinducer(B,C), targetinducer(A,C), targetagonist(B,C).
+(r139) interacts(A,B) :- enzymeinducer(A,E), target(D,A), transporterinhibitor(B,C), transporterinhibitor(A,C), transportersubstrate(A,C).
+(r140) interacts(A,B) :- targetantagonist(B,E), enzymeinhibitor(A,C), targetantagonist(A,F), transportersubstrate(B,D), targetinhibitor(B,F).
+====================
+MaxSAT solving... (6969 vars, 39193 hard, 1825 soft)
+number of rules: 142
+program size: 740
+(inv1) inv1(X1,X2,X3,X4,X5,X6) :- targetinhibitor(X1,X2), targetantagonist(X3,X4), targetantagonist(X5,X6).
+(inv2) inv2(X1,X2,X3,X4,X5,X6,X7,X8) :- target(X1,X2), target(X3,X4), targetinducer(X5,X6), targetinducer(X7,X8).
+(r1) interacts(A,B) :- transporterinducer(B,E), enzymesubstrate(B,D), transporter(F,A), targetinducer(A,C), transportersubstrate(B,F).
+(r2) interacts(A,B) :- enzymeinducer(A,E), transporterinhibitor(B,C), transportersubstrate(B,C), target(D,A), transporterinducer(A,C).
+(r3) interacts(A,B) :- transporterinhibitor(B,C), transportersubstrate(A,C), enzymeinducer(B,D), enzyme(D,A).
+(r4) interacts(A,B) :- targetinhibitor(A,D), enzymeinhibitor(A,F), transporterinducer(B,C), target(E,A).
+(r5) interacts(A,B) :- targetantagonist(B,F), enzyme(C,B), transporter(D,A), targetantagonist(B,E).
+(r6) interacts(A,B) :- targetagonist(A,F), enzymesubstrate(A,E), targetinducer(A,C), enzymesubstrate(B,D).
+(r7) interacts(A,B) :- targetinducer(B,C), targetagonist(B,C), transporter(D,A), targetantagonist(A,E).
+(r8) interacts(A,B) :- inv2(D,B,C,B,A,C,A,C), targetantagonist(A,D).
+(r9) interacts(A,B) :- enzymesubstrate(A,E), targetagonist(A,D), target(C,B), targetantagonist(A,D).
+(r10) interacts(A,B) :- enzyme(C,A), enzymesubstrate(B,C), transporter(F,B), enzymesubstrate(B,D), enzymesubstrate(B,E).
+(r11) interacts(A,B) :- transportersubstrate(A,D), enzyme(C,B), transporterinducer(A,E), enzymeinducer(B,F).
+(r12) interacts(A,B) :- inv2(D,A,F,B,A,E,A,C), targetantagonist(B,E).
+(r13) interacts(A,B) :- inv1(B,D,B,E,B,E), target(D,A), transportersubstrate(A,C), transporterinducer(A,C).
+(r14) interacts(A,B) :- target(C,A), enzyme(F,B), transporterinhibitor(B,D), enzymeinhibitor(B,E).
+(r15) interacts(A,B) :- enzymesubstrate(B,E), transporterinhibitor(A,C), enzymesubstrate(B,D), enzymeinhibitor(B,E).
+(r16) interacts(A,B) :- transporter(F,A), transportersubstrate(B,E), transporter(C,A), targetinhibitor(B,D).
+(r17) interacts(A,B) :- enzymeinducer(A,E), enzymeinhibitor(A,F), transporter(D,B), transportersubstrate(A,C).
+(r18) interacts(A,B) :- inv2(D,B,D,B,B,C,B,D), targetantagonist(A,C), targetantagonist(B,E).
+(r19) interacts(A,B) :- inv1(B,D,B,E,B,E), target(E,B), enzyme(F,A), targetagonist(A,C).
+(r20) interacts(A,B) :- targetagonist(B,D), transporter(C,B), transporter(C,A), enzymeinhibitor(A,E).
+(r21) interacts(A,B) :- targetinducer(A,E), targetagonist(A,D), targetinhibitor(B,F), targetagonist(A,C).
+(r22) interacts(A,B) :- transporter(C,B), enzymesubstrate(B,D), transporter(F,A), enzymesubstrate(A,E), enzymeinhibitor(A,E).
+(r23) interacts(A,B) :- transporterinhibitor(A,C), enzymeinhibitor(B,F), targetinhibitor(A,E), enzymeinducer(A,D).
+(r24) interacts(A,B) :- targetagonist(A,D), targetinducer(B,F), transporter(C,A), targetantagonist(B,E), targetantagonist(B,F).
+(r25) interacts(A,B) :- enzymesubstrate(B,D), targetantagonist(B,E), targetantagonist(A,E), transportersubstrate(B,C), enzymeinducer(B,F).
+(r26) interacts(A,B) :- targetagonist(B,D), targetinhibitor(B,E), target(C,B), enzyme(F,A).
+(r27) interacts(A,B) :- transporterinhibitor(A,C), transportersubstrate(B,C), targetinducer(A,D), transportersubstrate(A,C).
+(r28) interacts(A,B) :- enzyme(C,A), enzymeinducer(B,E), enzyme(D,B), transporter(F,B).
+(r29) interacts(A,B) :- enzymeinducer(B,E), targetagonist(A,D), target(D,A), targetantagonist(A,F), target(C,B).
+(r30) interacts(A,B) :- inv2(D,A,D,A,B,D,B,D), enzymeinducer(B,E), transporterinhibitor(B,C), transporterinducer(B,F).
+(r31) interacts(A,B) :- targetagonist(A,D), targetagonist(B,E), targetantagonist(B,E), transportersubstrate(A,C).
+(r32) interacts(A,B) :- inv2(E,A,D,A,A,D,A,D), target(C,A), target(D,B).
+(r33) interacts(A,B) :- enzyme(E,B), transporterinhibitor(B,C), target(D,A), enzymeinducer(B,F), enzymeinhibitor(A,E).
+(r34) interacts(A,B) :- targetinhibitor(A,D), enzymeinducer(B,C), targetinhibitor(B,D), target(D,A).
+(r35) interacts(A,B) :- inv1(A,C,A,F,A,F), enzymeinducer(B,E), enzyme(D,B).
+(r36) interacts(A,B) :- targetagonist(A,D), targetagonist(B,E), target(D,A), transporter(F,A), transporterinducer(A,C).
+(r37) interacts(A,B) :- targetantagonist(B,C), transporterinhibitor(B,E), targetinducer(B,F), transporterinhibitor(A,D).
+(r38) interacts(A,B) :- inv2(D,A,D,A,B,C,B,C), targetinhibitor(A,D), targetinhibitor(A,E), targetagonist(B,C).
+(r39) interacts(A,B) :- targetantagonist(B,C), targetinducer(A,C), enzymeinhibitor(B,D), transporter(E,B).
+(r40) interacts(A,B) :- enzymesubstrate(B,C), transporter(D,B), transporterinducer(A,D), target(E,A).
+(r41) interacts(A,B) :- transporterinhibitor(A,C), enzymeinhibitor(B,D), transporterinducer(B,E), enzymeinducer(A,F).
+(r42) interacts(A,B) :- transportersubstrate(A,F), enzyme(D,B), enzyme(E,A), targetagonist(A,C).
+(r43) interacts(A,B) :- transportersubstrate(A,F), transporter(C,B), transporterinducer(B,E), transporter(D,A).
+(r44) interacts(A,B) :- inv2(D,A,D,A,B,E,B,E), targetantagonist(A,D), transporterinhibitor(A,F), targetagonist(B,C).
+(r45) interacts(A,B) :- transporterinhibitor(A,E), targetinducer(A,C), transporterinducer(B,E), enzymesubstrate(B,D).
+(r46) interacts(A,B) :- enzymesubstrate(B,D), enzymesubstrate(A,D), transportersubstrate(A,C), transporter(F,A), enzymeinhibitor(A,E).
+(r47) interacts(A,B) :- inv2(C,B,C,B,A,C,A,C), enzymeinducer(A,D), enzymesubstrate(B,D), transportersubstrate(B,E).
+(r48) interacts(A,B) :- enzyme(D,B), enzymesubstrate(B,D), enzymeinducer(A,C), transporter(E,A).
+(r49) interacts(A,B) :- transportersubstrate(A,F), transporter(D,A), targetantagonist(B,E), transportersubstrate(B,D), targetagonist(A,C).
+(r50) interacts(A,B) :- transporterinhibitor(A,C), transporter(E,B), target(D,A), enzymesubstrate(A,F), enzymeinducer(B,F).
+(r51) interacts(A,B) :- enzymeinducer(A,E), transporterinducer(A,C), transporterinducer(B,D), transporter(D,A).
+(r52) interacts(A,B) :- transportersubstrate(B,D), targetinducer(A,C), transporterinducer(B,E), targetinhibitor(A,F).
+(r53) interacts(A,B) :- transporterinhibitor(B,D), enzymesubstrate(A,F), targetantagonist(A,C), enzyme(E,A).
+(r54) interacts(A,B) :- enzymeinducer(B,E), target(D,A), transporter(F,A), transporterinducer(A,C), targetinhibitor(B,D).
+(r55) interacts(A,B) :- target(D,A), transporterinhibitor(B,C), transportersubstrate(A,C), transportersubstrate(B,E), targetinhibitor(A,F).
+(r56) interacts(A,B) :- inv2(C,B,C,B,A,C,B,C), targetinhibitor(A,D).
+(r57) interacts(A,B) :- targetinhibitor(B,E), transporter(C,A), targetinducer(B,D), target(D,A).
+(r58) interacts(A,B) :- targetinducer(A,F), transporter(C,A), targetantagonist(B,E), transporterinducer(A,C), transporterinducer(A,D).
+(r59) interacts(A,B) :- transporterinhibitor(B,F), enzymeinhibitor(B,D), transporterinducer(A,E), transportersubstrate(A,C).
+(r60) interacts(A,B) :- inv2(D,A,C,B,A,C,A,C), targetagonist(B,D), targetinhibitor(B,E).
+(r61) interacts(A,B) :- targetinhibitor(A,D), enzymesubstrate(A,C), transporterinducer(B,E), target(F,A).
+(r62) interacts(A,B) :- enzymeinhibitor(B,C), enzyme(E,B), transportersubstrate(A,D).
+(r63) interacts(A,B) :- enzymesubstrate(A,C), enzymesubstrate(B,D), enzymeinducer(A,C), transporterinducer(A,E), enzymeinhibitor(B,D).
+(r64) interacts(A,B) :- transporterinhibitor(A,C), transporterinducer(B,E), targetantagonist(B,D), target(D,A), transporterinhibitor(B,F).
+(r65) interacts(A,B) :- enzymesubstrate(B,C), transporterinducer(B,E), transporter(F,B), target(D,A), transporter(F,A).
+(r66) interacts(A,B) :- targetinducer(A,E), transporterinducer(A,F), enzymesubstrate(A,D), enzymeinducer(B,C).
+(r67) interacts(A,B) :- targetantagonist(B,D), targetagonist(A,E), transporter(F,B), targetantagonist(B,E), enzymeinhibitor(A,C).
+(r68) interacts(A,B) :- enzymesubstrate(B,E), transporterinhibitor(B,C), enzymeinhibitor(B,E), target(D,A).
+(r69) interacts(A,B) :- targetinducer(A,E), enzyme(C,B), enzymesubstrate(B,D), enzymeinhibitor(A,C), targetinhibitor(A,E).
+(r70) interacts(A,B) :- targetagonist(B,D), target(D,A), enzymeinhibitor(B,C), transporterinhibitor(A,E), enzyme(F,A).
+(r71) interacts(A,B) :- targetagonist(A,D), transportersubstrate(B,C), transporterinducer(B,F), targetantagonist(B,E), target(E,B).
+(r72) interacts(A,B) :- targetinhibitor(A,C), targetantagonist(B,E), target(D,B), targetagonist(B,C), targetagonist(A,C).
+(r73) interacts(A,B) :- inv1(B,C,A,D,A,D), transporterinhibitor(A,E), transporter(F,B).
+(r74) interacts(A,B) :- target(D,A), targetagonist(A,E), targetantagonist(A,E), transporterinducer(B,C), transporterinhibitor(B,F).
+(r75) interacts(A,B) :- enzyme(C,B), enzymeinhibitor(A,D), transportersubstrate(B,E), enzymeinducer(B,C).
+(r76) interacts(A,B) :- targetantagonist(B,C), transporterinducer(A,E), enzyme(F,A), targetinducer(A,D).
+(r77) interacts(A,B) :- enzyme(D,B), targetantagonist(B,E), transporter(F,A), transporterinducer(B,C), transporterinhibitor(B,F).
+(r78) interacts(A,B) :- target(E,B), transporterinducer(B,C), transporterinducer(A,D), transporterinducer(B,D).
+(r79) interacts(A,B) :- enzymesubstrate(A,C), enzyme(C,B), targetagonist(B,E), target(E,A), enzymesubstrate(B,D).
+(r80) interacts(A,B) :- enzymesubstrate(B,C), transporter(E,B), enzymesubstrate(B,D), enzymesubstrate(A,D), enzymeinhibitor(A,D).
+(r81) interacts(A,B) :- inv1(B,C,B,E,B,E), targetinducer(B,E), targetinhibitor(A,C), enzymesubstrate(A,D).
+(r82) interacts(A,B) :- inv2(C,A,C,A,B,C,B,C), targetagonist(B,E), enzyme(D,A).
+(r83) interacts(A,B) :- transporter(F,A), transporterinducer(A,C), targetantagonist(A,D), enzymesubstrate(B,E).
+(r84) interacts(A,B) :- transporterinducer(A,C), transportersubstrate(A,D), transporterinducer(B,C), targetantagonist(A,E).
+(r85) interacts(A,B) :- inv1(A,D,B,E,B,F), transporterinhibitor(A,C), transportersubstrate(B,C).
+(r86) interacts(A,B) :- inv2(D,A,D,A,A,F,A,F), enzymeinducer(A,C), enzymeinhibitor(B,C), enzymesubstrate(B,E).
+(r87) interacts(A,B) :- enzyme(D,B), targetinhibitor(A,C), targetantagonist(B,E), targetagonist(A,C), enzyme(D,A).
+(r88) interacts(A,B) :- enzymesubstrate(A,D), targetantagonist(A,E), targetantagonist(B,E), transportersubstrate(B,C), transporterinhibitor(B,F).
+(r89) interacts(A,B) :- targetinhibitor(B,C), target(D,A), target(C,A), transportersubstrate(B,E), targetagonist(A,C).
+(r90) interacts(A,B) :- inv2(D,A,E,A,A,E,A,E), enzymeinducer(A,C), transporterinhibitor(B,F).
+(r91) interacts(A,B) :- targetantagonist(B,C), targetantagonist(B,E), transportersubstrate(B,D), target(C,B), targetagonist(A,C).
+(r92) interacts(A,B) :- inv2(D,A,D,A,B,F,B,F), enzyme(E,B), transporter(C,B), targetinhibitor(B,D).
+(r93) interacts(A,B) :- enzyme(E,B), enzymeinducer(B,E), targetinducer(A,F), target(D,A), targetantagonist(A,C).
+(r94) interacts(A,B) :- enzyme(C,B), targetantagonist(B,E), transporterinducer(B,F), transporterinducer(A,F), targetinducer(A,D).
+(r95) interacts(A,B) :- inv2(D,B,D,B,A,E,B,C), targetinhibitor(B,E).
+(r96) interacts(A,B) :- transporterinhibitor(B,F), targetinhibitor(A,C), enzymeinhibitor(B,E), targetinhibitor(B,D).
+(r97) interacts(A,B) :- targetinducer(A,E), transporterinhibitor(B,C), transporterinhibitor(B,D), targetantagonist(B,E), transporterinducer(B,F).
+(r98) interacts(A,B) :- enzymeinducer(B,E), targetinducer(B,C), transporterinducer(B,D), enzyme(F,A).
+(r99) interacts(A,B) :- inv1(B,E,B,F,A,C), enzymesubstrate(B,D), enzyme(D,A).
+(r100) interacts(A,B) :- enzymeinhibitor(B,D), targetantagonist(B,E), targetantagonist(A,E), target(F,B), target(C,B).
+(r101) interacts(A,B) :- enzyme(C,A), enzyme(E,B), enzymesubstrate(B,D), enzymesubstrate(A,D), enzymeinhibitor(B,C).
+(r102) interacts(A,B) :- enzyme(D,B), transporterinducer(B,E), enzymesubstrate(B,D), enzymeinducer(A,C), transporter(E,A).
+(r103) interacts(A,B) :- inv1(B,C,A,C,A,C), transportersubstrate(B,E), targetinducer(B,D).
+(r104) interacts(A,B) :- targetantagonist(A,D), enzymeinducer(A,C), target(D,A), targetantagonist(B,F), transportersubstrate(B,E).
+(r105) interacts(A,B) :- enzymeinducer(B,F), targetinducer(A,E), transporter(D,A), targetagonist(A,C).
+(r106) interacts(A,B) :- transporterinducer(B,D), transporter(F,B), targetantagonist(B,E), transportersubstrate(B,D), targetantagonist(A,C).
+(r107) interacts(A,B) :- targetantagonist(B,E), enzymeinducer(B,C), enzymeinhibitor(B,D), enzymeinducer(B,F), enzyme(D,A).
+(r108) interacts(A,B) :- enzymeinducer(B,E), transporterinhibitor(B,C), transporterinducer(B,D), targetinhibitor(A,F).
+(r109) interacts(A,B) :- inv2(D,A,D,A,A,D,A,D), targetagonist(B,D), enzymesubstrate(A,E), transporterinducer(A,C).
+(r110) interacts(A,B) :- target(C,A), target(E,B), enzymesubstrate(B,D), enzymesubstrate(A,D).
+(r111) interacts(A,B) :- transportersubstrate(B,D), target(E,B), targetinhibitor(B,C), enzyme(F,A).
+(r112) interacts(A,B) :- inv1(A,C,A,E,A,E), enzyme(D,B), target(F,A), enzymesubstrate(B,D).
+(r113) interacts(A,B) :- transportersubstrate(A,E), transportersubstrate(B,D), transporter(C,A), targetagonist(B,F).
+(r114) interacts(A,B) :- inv1(B,E,B,D,B,E), transportersubstrate(A,F), transporterinducer(A,C).
+(r115) interacts(A,B) :- inv1(A,F,B,E,B,E), transportersubstrate(A,C), target(E,B), enzymeinhibitor(A,D).
+(r116) interacts(A,B) :- enzymeinhibitor(A,F), enzyme(F,B), transporterinducer(B,E), target(D,A), target(C,A).
+(r117) interacts(A,B) :- transportersubstrate(B,E), target(F,A), transporter(C,A), transporterinhibitor(A,D).
+(r118) interacts(A,B) :- enzymesubstrate(B,C), enzyme(C,B), target(D,A), transporter(F,A), enzymeinhibitor(A,E).
+(r119) interacts(A,B) :- enzymesubstrate(B,D), transportersubstrate(A,C), targetinhibitor(A,E), transporterinducer(B,F), enzyme(D,A).
+(r120) interacts(A,B) :- targetagonist(A,E), targetantagonist(B,E), enzymeinducer(B,C), transporterinducer(A,D), transportersubstrate(B,F).
+(r121) interacts(A,B) :- transporterinhibitor(B,D), transporter(F,B), transporter(D,A), targetantagonist(B,E), transporterinducer(A,C).
+(r122) interacts(A,B) :- transporterinducer(B,C), targetantagonist(B,D), transporter(C,A), transporterinducer(A,E).
+(r123) interacts(A,B) :- targetinducer(A,C), targetantagonist(B,D), enzyme(E,A), transporterinducer(B,F).
+(r124) interacts(A,B) :- inv2(E,B,E,B,A,D,A,D), enzymeinhibitor(B,C), targetinhibitor(B,D).
+(r125) interacts(A,B) :- enzymeinhibitor(A,F), targetantagonist(B,E), target(D,A), transporterinducer(B,C), targetinducer(B,D).
+(r126) interacts(A,B) :- enzymeinhibitor(B,C), transporterinhibitor(B,D), targetinducer(B,E), enzymeinducer(A,F).
+(r127) interacts(A,B) :- target(D,A), transporter(F,B), transportersubstrate(A,C), transporterinducer(A,F), transportersubstrate(B,E).
+(r128) interacts(A,B) :- target(C,A), transporterinducer(A,F), enzymesubstrate(B,E), target(D,A).
+(r129) interacts(A,B) :- enzyme(D,B), targetagonist(B,E), targetantagonist(B,E), transporterinducer(B,C), transporterinducer(A,F).
+(r130) interacts(A,B) :- transporter(C,B), targetantagonist(A,F), targetantagonist(B,E), targetantagonist(A,E), transportersubstrate(A,D).
+(r131) interacts(A,B) :- targetinducer(B,E), transporter(C,B), enzymeinducer(B,F), target(D,A).
+(r132) interacts(A,B) :- targetagonist(B,F), enzymesubstrate(B,C), targetagonist(A,E), enzymeinducer(A,C), enzymesubstrate(B,D).
+(r133) interacts(A,B) :- inv2(D,A,D,A,A,F,A,F), transporter(E,B), transporter(C,A), transporter(E,A).
+(r134) interacts(A,B) :- enzymeinducer(B,E), enzymeinducer(A,D), enzymeinducer(B,D), enzymesubstrate(B,D), targetinhibitor(B,C).
+(r135) interacts(A,B) :- target(D,A), target(E,A), transportersubstrate(A,C), transportersubstrate(B,C), transportersubstrate(B,F).
+(r136) interacts(A,B) :- targetantagonist(B,C), targetantagonist(A,D), targetagonist(B,E), target(D,A), enzymesubstrate(A,F).
+(r137) interacts(A,B) :- inv2(D,A,D,A,A,D,A,D), transporter(F,B), transportersubstrate(B,C), targetinhibitor(B,E).
+(r138) interacts(A,B) :- inv2(D,A,D,A,B,C,A,C), targetinhibitor(A,C), targetagonist(B,C).
+(r139) interacts(A,B) :- enzymeinducer(A,E), target(D,A), transporterinhibitor(B,C), transporterinhibitor(A,C), transportersubstrate(A,C).
+(r140) interacts(A,B) :- inv1(B,F,B,E,A,F), enzymeinhibitor(A,C), transportersubstrate(B,D).
+====================
